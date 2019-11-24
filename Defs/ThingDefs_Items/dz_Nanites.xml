@@ -1,0 +1,24 @@
+<Defs>
+  <ThingDef ParentName="ResourceBase">
+    <defName>dz_Nanites</defName>
+    <label>Nanites</label>
+    <description>A curious material only found in archotech technologies.</description>
+    <graphicData>
+      <texPath>Things/Item/Resource/Neutroamine</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+      <drawSize>0.90</drawSize>
+    </graphicData>
+    <stackLimit>150</stackLimit>
+    <statBases>
+      <MaxHitPoints>50</MaxHitPoints>
+      <Beauty>0</Beauty>
+      <MarketValue>6</MarketValue>
+      <Mass>0.02</Mass>
+      <Flammability>0.7</Flammability>
+      <DeteriorationRate>1.0</DeteriorationRate>
+    </statBases>
+    <thingCategories>
+      <li>Manufactured</li>
+    </thingCategories>
+  </ThingDef>
+</Defs>
