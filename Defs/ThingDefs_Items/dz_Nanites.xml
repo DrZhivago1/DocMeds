@@ -1,10 +1,10 @@
 <Defs>
   <ThingDef ParentName="ResourceBase">
-    <defName>dz_Nanites</defName>
+    <defName>DZ_Nanites</defName>
     <label>Nanites</label>
     <description>A curious material only found in archotech technologies.</description>
     <graphicData>
-      <texPath>Things/Item/Resource/Neutroamine</texPath>
+      <texPath>Things/Item/Resource/DZ_Nanites</texPath>
       <graphicClass>Graphic_StackCount</graphicClass>
       <drawSize>0.90</drawSize>
     </graphicData>
