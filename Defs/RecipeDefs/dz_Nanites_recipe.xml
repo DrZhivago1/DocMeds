@@ -45,7 +45,7 @@
             </thingDefs>
         </fixedIngredientFilter>
         <products>
-            <dz_Nanites>50</dz_Nanites>
+            <DZ_Nanites>50</DZ_Nanites>
         </products>
         <researchPrerequisite>AdvancedFabrication</researchPrerequisite>
         <skillRequirements>
@@ -100,7 +100,7 @@
             </thingDefs>
         </fixedIngredientFilter>
         <products>
-            <dz_Nanites>40</dz_Nanites>
+            <DZ_Nanites>40</DZ_Nanites>
         </products>
         <researchPrerequisite>AdvancedFabrication</researchPrerequisite>
         <skillRequirements>
@@ -155,7 +155,7 @@
             </thingDefs>
         </fixedIngredientFilter>
         <products>
-            <dz_Nanites>30</dz_Nanites>
+            <DZ_Nanites>30</DZ_Nanites>
         </products>
         <researchPrerequisite>AdvancedFabrication</researchPrerequisite>
         <skillRequirements>
@@ -210,7 +210,7 @@
             </thingDefs>
         </fixedIngredientFilter>
         <products>
-            <dz_Nanites>20</dz_Nanites>
+            <DZ_Nanites>20</DZ_Nanites>
         </products>
         <researchPrerequisite>AdvancedFabrication</researchPrerequisite>
         <skillRequirements>
@@ -265,7 +265,7 @@
             </thingDefs>
         </fixedIngredientFilter>
         <products>
-            <dz_Nanites>20</dz_Nanites>
+            <DZ_Nanites>20</DZ_Nanites>
         </products>
         <researchPrerequisite>AdvancedFabrication</researchPrerequisite>
         <skillRequirements>
@@ -322,7 +322,7 @@
             </categories>
         </fixedIngredientFilter>
         <products>
-            <dz_Nanites>10</dz_Nanites>
+            <DZ_Nanites>10</DZ_Nanites>
         </products>
         <researchPrerequisite>AdvancedFabrication</researchPrerequisite>
         <skillRequirements>
