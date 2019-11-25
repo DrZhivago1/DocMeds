@@ -45,7 +45,7 @@
             </thingDefs>
         </fixedIngredientFilter>
         <products>
-            <DZ_Nanites>50</DZ_Nanites>
+            <DZ_Nanites>75</DZ_Nanites>
         </products>
         <researchPrerequisite>AdvancedFabrication</researchPrerequisite>
         <skillRequirements>
@@ -100,122 +100,12 @@
             </thingDefs>
         </fixedIngredientFilter>
         <products>
-            <DZ_Nanites>40</DZ_Nanites>
-        </products>
-        <researchPrerequisite>AdvancedFabrication</researchPrerequisite>
-        <skillRequirements>
-            <Crafting>15</Crafting>
-            <Intellectual>10</Intellectual>
-        </skillRequirements>
-        <workSkill>Crafting</workSkill>
-    </RecipeDef>
-
-<!--=============== Techprof Subpersona Core disassembly ====================-->
-    <RecipeDef>
-        <defName>disassemble_techprofcore</defName>
-        <label>Disassemble Techprof Subpersona Core</label>
-        <description>Make nanites from a Techprof Subpersona Core</description>
-        <jobString>Make nanites from a Techprof Subpersona Core</jobString>
-        <workSpeedStat>SmithingSpeed</workSpeedStat>
-        <effectWorking>Cook</effectWorking>
-        <soundWorking>Recipe_Machining</soundWorking>
-        <workAmount>1000</workAmount>
-        <unfinishedThingDef>UnfinishedComponent</unfinishedThingDef>
-        <ingredients>
-            <li>
-                <filter>
-                    <thingDefs>
-                        <li>TechprofSubpersonaCore</li>
-                    </thingDefs>
-                </filter>
-                <count>1</count>
-            </li>
-            <li>
-                <filter>
-                    <thingDefs>
-                        <li>Plasteel</li>
-                    </thingDefs>
-                </filter>
-                <count>10</count>
-            </li>
-            <li>
-                <filter>
-                    <thingDefs>
-                        <li>Chemfuel</li>
-                    </thingDefs>
-                </filter>
-                <count>10</count>
-            </li>
-        </ingredients>
-        <fixedIngredientFilter>
-            <thingDefs>
-                <li>TechprofSubpersonaCore</li>
-                <li>Plasteel</li>
-                <li>Chemfuel</li>
-            </thingDefs>
-        </fixedIngredientFilter>
-        <products>
             <DZ_Nanites>30</DZ_Nanites>
         </products>
         <researchPrerequisite>AdvancedFabrication</researchPrerequisite>
         <skillRequirements>
             <Crafting>15</Crafting>
-            <Intellectual>8</Intellectual>
-        </skillRequirements>
-        <workSkill>Crafting</workSkill>
-    </RecipeDef>
-
-<!--=============== Neutrotrainer Mech Serum disassembly ====================-->
-    <RecipeDef>
-        <defName>disassemble_neurotrainer</defName>
-        <label>Disassemble Neurotrainer Mech Serum</label>
-        <description>Make nanites from a Neutrotrainer Mech Serum</description>
-        <jobString>Make nanites from a Neutrotrainer Mech Serum</jobString>
-        <workSpeedStat>SmithingSpeed</workSpeedStat>
-        <effectWorking>Cook</effectWorking>
-        <soundWorking>Recipe_Machining</soundWorking>
-        <workAmount>1000</workAmount>
-        <unfinishedThingDef>UnfinishedComponent</unfinishedThingDef>
-        <ingredients>
-            <li>
-                <filter>
-                    <thingDefs>
-                        <li>MechSerumNeurotrainer</li>
-                    </thingDefs>
-                </filter>
-                <count>1</count>
-            </li>
-            <li>
-                <filter>
-                    <thingDefs>
-                        <li>Plasteel</li>
-                    </thingDefs>
-                </filter>
-                <count>10</count>
-            </li>
-            <li>
-                <filter>
-                    <thingDefs>
-                        <li>Chemfuel</li>
-                    </thingDefs>
-                </filter>
-                <count>10</count>
-            </li>
-        </ingredients>
-        <fixedIngredientFilter>
-            <thingDefs>
-                <li>MechSerumNeurotrainer</li>
-                <li>Plasteel</li>
-                <li>Chemfuel</li>
-            </thingDefs>
-        </fixedIngredientFilter>
-        <products>
-            <DZ_Nanites>20</DZ_Nanites>
-        </products>
-        <researchPrerequisite>AdvancedFabrication</researchPrerequisite>
-        <skillRequirements>
-            <Crafting>15</Crafting>
-            <Intellectual>8</Intellectual>
+            <Intellectual>10</Intellectual>
         </skillRequirements>
         <workSkill>Crafting</workSkill>
     </RecipeDef>
@@ -266,6 +156,116 @@
         </fixedIngredientFilter>
         <products>
             <DZ_Nanites>20</DZ_Nanites>
+        </products>
+        <researchPrerequisite>AdvancedFabrication</researchPrerequisite>
+        <skillRequirements>
+            <Crafting>15</Crafting>
+            <Intellectual>8</Intellectual>
+        </skillRequirements>
+        <workSkill>Crafting</workSkill>
+    </RecipeDef>
+
+<!--=============== Techprof Subpersona Core disassembly ====================-->
+    <RecipeDef>
+        <defName>disassemble_techprofcore</defName>
+        <label>Disassemble Techprof Subpersona Core</label>
+        <description>Make nanites from a Techprof Subpersona Core</description>
+        <jobString>Make nanites from a Techprof Subpersona Core</jobString>
+        <workSpeedStat>SmithingSpeed</workSpeedStat>
+        <effectWorking>Cook</effectWorking>
+        <soundWorking>Recipe_Machining</soundWorking>
+        <workAmount>1000</workAmount>
+        <unfinishedThingDef>UnfinishedComponent</unfinishedThingDef>
+        <ingredients>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>TechprofSubpersonaCore</li>
+                    </thingDefs>
+                </filter>
+                <count>1</count>
+            </li>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>Plasteel</li>
+                    </thingDefs>
+                </filter>
+                <count>10</count>
+            </li>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>Chemfuel</li>
+                    </thingDefs>
+                </filter>
+                <count>10</count>
+            </li>
+        </ingredients>
+        <fixedIngredientFilter>
+            <thingDefs>
+                <li>TechprofSubpersonaCore</li>
+                <li>Plasteel</li>
+                <li>Chemfuel</li>
+            </thingDefs>
+        </fixedIngredientFilter>
+        <products>
+            <DZ_Nanites>15</DZ_Nanites>
+        </products>
+        <researchPrerequisite>AdvancedFabrication</researchPrerequisite>
+        <skillRequirements>
+            <Crafting>15</Crafting>
+            <Intellectual>8</Intellectual>
+        </skillRequirements>
+        <workSkill>Crafting</workSkill>
+    </RecipeDef>
+
+<!--=============== Neurotrainer Mech Serum disassembly ====================-->
+    <RecipeDef>
+        <defName>disassemble_neurotrainer</defName>
+        <label>Disassemble Neurotrainer Mech Serum</label>
+        <description>Make nanites from a Neutrotrainer Mech Serum</description>
+        <jobString>Make nanites from a Neutrotrainer Mech Serum</jobString>
+        <workSpeedStat>SmithingSpeed</workSpeedStat>
+        <effectWorking>Cook</effectWorking>
+        <soundWorking>Recipe_Machining</soundWorking>
+        <workAmount>1000</workAmount>
+        <unfinishedThingDef>UnfinishedComponent</unfinishedThingDef>
+        <ingredients>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>MechSerumNeurotrainer</li>
+                    </thingDefs>
+                </filter>
+                <count>1</count>
+            </li>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>Plasteel</li>
+                    </thingDefs>
+                </filter>
+                <count>10</count>
+            </li>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>Chemfuel</li>
+                    </thingDefs>
+                </filter>
+                <count>10</count>
+            </li>
+        </ingredients>
+        <fixedIngredientFilter>
+            <thingDefs>
+                <li>MechSerumNeurotrainer</li>
+                <li>Plasteel</li>
+                <li>Chemfuel</li>
+            </thingDefs>
+        </fixedIngredientFilter>
+        <products>
+            <DZ_Nanites>10</DZ_Nanites>
         </products>
         <researchPrerequisite>AdvancedFabrication</researchPrerequisite>
         <skillRequirements>
