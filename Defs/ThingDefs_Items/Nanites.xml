@@ -13,7 +13,7 @@
 		<techLevel>Ultra</techLevel>
     <statBases>
       <MaxHitPoints>50</MaxHitPoints>
-      <Beauty />
+	<Beauty>0</Beauty>
       <MarketValue>50</MarketValue>
       <Mass>0.02</Mass>
       <Flammability>0</Flammability>
