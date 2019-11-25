@@ -1,11 +1,12 @@
+<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
 <!--=============== AI Persona Core Assembly ====================-->
     <RecipeDef>
         <defName>assemble_aipersonacore</defName>
         <label>Assemble AI Persona Core</label>
-        <description>Make AI Persona Core< from nanites</description>
-        <jobString>Make AI Persona Core< from nanites</jobString>
+        <description>Make AI Persona Core from nanites</description>
+        <jobString>Make AI Persona Core from nanites</jobString>
         <workSpeedStat>SmithingSpeed</workSpeedStat>
         <effectWorking>Cook</effectWorking>
         <soundWorking>Recipe_Machining</soundWorking>
@@ -104,8 +105,8 @@
         </products>
         <researchPrerequisite>AdvancedFabrication</researchPrerequisite>
         <skillRequirements>
-            <Crafting>20</Crafting>
-            <Intellectual>20</Intellectual>
+            <Crafting>15</Crafting>
+            <Intellectual>15</Intellectual>
         </skillRequirements>
         <workSkill>Crafting</workSkill>
     </RecipeDef>
@@ -159,8 +160,8 @@
         </products>
         <researchPrerequisite>AdvancedFabrication</researchPrerequisite>
         <skillRequirements>
-            <Crafting>20</Crafting>
-            <Intellectual>20</Intellectual>
+            <Crafting>13</Crafting>
+            <Intellectual>13</Intellectual>
         </skillRequirements>
         <workSkill>Crafting</workSkill>
     </RecipeDef>
@@ -214,13 +215,13 @@
         </products>
         <researchPrerequisite>AdvancedFabrication</researchPrerequisite>
         <skillRequirements>
-            <Crafting>20</Crafting>
-            <Intellectual>20</Intellectual>
+            <Crafting>12</Crafting>
+            <Intellectual>12</Intellectual>
         </skillRequirements>
         <workSkill>Crafting</workSkill>
     </RecipeDef>
 
-<!--=============== Neutrotrainer Mech Serum assembly ====================-->
+<!--=============== Neurotrainer Mech Serum assembly ====================-->
     <RecipeDef>
         <defName>assemble_neurotrainer</defName>
         <label>Assemble Neurotrainer Mech Serum</label>
@@ -269,23 +270,20 @@
         </products>
         <researchPrerequisite>AdvancedFabrication</researchPrerequisite>
         <skillRequirements>
-            <Crafting>20</Crafting>
-            <Intellectual>20</Intellectual>
+            <Crafting>11</Crafting>
+            <Intellectual>11</Intellectual>
         </skillRequirements>
         <workSkill>Crafting</workSkill>
     </RecipeDef>
-
-
-
 
 <!--=============== PSYCHIC ARTIFACTS NOTICE ME SENPAI ====================-->
 
 <!--=============== Psychic Shock Lance Assembly ====================-->
     <RecipeDef>
-        <defName>assemble_neurotrainer</defName>
-        <label>Assemble Neurotrainer Mech Serum</label>
-        <description>Make Neurotrainer Mech Serum from nanites</description>
-        <jobString>Make Neurotrainer Mech Serum from nanites</jobString>
+        <defName>assemble_psychicshocklance</defName>
+        <label>Assemble Psychic Shock Lance</label>
+        <description>Make Psychic Shock Lance from nanites</description>
+        <jobString>Make Psychic Shock Lance from nanites</jobString>
         <workSpeedStat>SmithingSpeed</workSpeedStat>
         <effectWorking>Cook</effectWorking>
         <soundWorking>Recipe_Machining</soundWorking>
@@ -298,49 +296,49 @@
                         <li>DZ_Nanites</li>
                     </thingDefs>
                 </filter>
-                <count>150</count>
+                <count>10</count>
             </li>
             <li>
                 <filter>
                     <thingDefs>
-                        <li>ComponentSpacer</li>
+                        <li>Steel</li>
                     </thingDefs>
                 </filter>
-                <count>5</count>
+                <count>20</count>
             </li>
             <li>
                 <filter>
                     <thingDefs>
-                        <li>Plasteel</li>
+                        <li>Uranium</li>
                     </thingDefs>
                 </filter>
-                <count>50</count>
+                <count>10</count>
             </li>
         </ingredients>
         <fixedIngredientFilter>
             <thingDefs>
                 <li>DZ_Nanites</li>
-                <li>ComponentSpacer</li>
-                <li>Plasteel</li>
+                <li>Steel</li>
+                <li>Uranium</li>
             </thingDefs>
         </fixedIngredientFilter>
         <products>
-            <AIPersonaCore>1</AIPersonaCore>
+            <PsychicShockLance>1</PsychicShockLance>
         </products>
         <researchPrerequisite>AdvancedFabrication</researchPrerequisite>
         <skillRequirements>
-            <Crafting>20</Crafting>
-            <Intellectual>20</Intellectual>
+            <Crafting>10</Crafting>
+            <Intellectual>10</Intellectual>
         </skillRequirements>
         <workSkill>Crafting</workSkill>
     </RecipeDef>
 
 <!--=============== Psychic Sooth Pulser Assembly ====================-->
     <RecipeDef>
-        <defName>assemble_neurotrainer</defName>
-        <label>Assemble Neurotrainer Mech Serum</label>
-        <description>Make Neurotrainer Mech Serum from nanites</description>
-        <jobString>Make Neurotrainer Mech Serum from nanites</jobString>
+        <defName>assemble_psychicsoothepulser</defName>
+        <label>Assemble Psychic Soothe Pulser</label>
+        <description>Make Psychic Soothe Pulser from nanites</description>
+        <jobString>Make Psychic Soothe Pulser from nanites</jobString>
         <workSpeedStat>SmithingSpeed</workSpeedStat>
         <effectWorking>Cook</effectWorking>
         <soundWorking>Recipe_Machining</soundWorking>
@@ -353,49 +351,49 @@
                         <li>DZ_Nanites</li>
                     </thingDefs>
                 </filter>
-                <count>150</count>
+                <count>10</count>
             </li>
             <li>
                 <filter>
                     <thingDefs>
-                        <li>ComponentSpacer</li>
+                        <li>Steel</li>
                     </thingDefs>
                 </filter>
-                <count>5</count>
+                <count>20</count>
             </li>
             <li>
                 <filter>
                     <thingDefs>
-                        <li>Plasteel</li>
+                        <li>Uranium</li>
                     </thingDefs>
                 </filter>
-                <count>50</count>
+                <count>10</count>
             </li>
         </ingredients>
         <fixedIngredientFilter>
             <thingDefs>
                 <li>DZ_Nanites</li>
-                <li>ComponentSpacer</li>
-                <li>Plasteel</li>
+                <li>Steel</li>
+                <li>Uranium</li>
             </thingDefs>
         </fixedIngredientFilter>
         <products>
-            <AIPersonaCore>1</AIPersonaCore>
+            <PsychicSoothePulser>1</PsychicSoothePulser>
         </products>
         <researchPrerequisite>AdvancedFabrication</researchPrerequisite>
         <skillRequirements>
-            <Crafting>20</Crafting>
-            <Intellectual>20</Intellectual>
+            <Crafting>10</Crafting>
+            <Intellectual>10</Intellectual>
         </skillRequirements>
         <workSkill>Crafting</workSkill>
     </RecipeDef>
 
 <!--=============== Psychic Insanity Lance Assembly ====================-->
     <RecipeDef>
-        <defName>assemble_neurotrainer</defName>
-        <label>Assemble Neurotrainer Mech Serum</label>
-        <description>Make Neurotrainer Mech Serum from nanites</description>
-        <jobString>Make Neurotrainer Mech Serum from nanites</jobString>
+        <defName>assemble_psychicinsanitylance</defName>
+        <label>Assemble Psychic Insanity Lance</label>
+        <description>Make Psychic Insanity Lance from nanites</description>
+        <jobString>Make Psychic Insanity Lance from nanites</jobString>
         <workSpeedStat>SmithingSpeed</workSpeedStat>
         <effectWorking>Cook</effectWorking>
         <soundWorking>Recipe_Machining</soundWorking>
@@ -408,12 +406,124 @@
                         <li>DZ_Nanites</li>
                     </thingDefs>
                 </filter>
-                <count>150</count>
+                <count>10</count>
             </li>
             <li>
                 <filter>
                     <thingDefs>
-                        <li>ComponentSpacer</li>
+                        <li>Steel</li>
+                    </thingDefs>
+                </filter>
+                <count>20</count>
+            </li>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>Uranium</li>
+                    </thingDefs>
+                </filter>
+                <count>10</count>
+            </li>
+        </ingredients>
+        <fixedIngredientFilter>
+            <thingDefs>
+                <li>DZ_Nanites</li>
+                <li>Steel</li>
+                <li>Uranium</li>
+            </thingDefs>
+        </fixedIngredientFilter>
+        <products>
+            <PsychicInsanityLance>1</PsychicInsanityLance>
+        </products>
+        <researchPrerequisite>AdvancedFabrication</researchPrerequisite>
+        <skillRequirements>
+            <Crafting>10</Crafting>
+            <Intellectual>10</Intellectual>
+        </skillRequirements>
+        <workSkill>Crafting</workSkill>
+    </RecipeDef>
+
+<!--=============== Psychic Animal Pulser Assembly ====================-->
+    <RecipeDef>
+        <defName>assemble_psychicanimalpulser</defName>
+        <label>Assemble Psychic Animal Pulser</label>
+        <description>Make Psychic Animal Pulser from nanites</description>
+        <jobString>Make Psychic Animal Pulser from nanites</jobString>
+        <workSpeedStat>SmithingSpeed</workSpeedStat>
+        <effectWorking>Cook</effectWorking>
+        <soundWorking>Recipe_Machining</soundWorking>
+        <workAmount>1000</workAmount>
+        <unfinishedThingDef>UnfinishedComponent</unfinishedThingDef>
+        <ingredients>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>DZ_Nanites</li>
+                    </thingDefs>
+                </filter>
+                <count>10</count>
+            </li>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>Steel</li>
+                    </thingDefs>
+                </filter>
+                <count>20</count>
+            </li>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>Uranium</li>
+                    </thingDefs>
+                </filter>
+                <count>10</count>
+            </li>
+        </ingredients>
+        <fixedIngredientFilter>
+            <thingDefs>
+                <li>DZ_Nanites</li>
+                <li>Steel</li>
+                <li>Uranium</li>
+            </thingDefs>
+        </fixedIngredientFilter>
+        <products>
+            <PsychicAnimalPulser>1</PsychicAnimalPulser>
+        </products>
+        <researchPrerequisite>AdvancedFabrication</researchPrerequisite>
+        <skillRequirements>
+            <Crafting>10</Crafting>
+            <Intellectual>10</Intellectual>
+        </skillRequirements>
+        <workSkill>Crafting</workSkill>
+    </RecipeDef>
+
+<!--=============== OTHER OBJECTS FROM NANITES ====================-->
+
+<!--=============== Glitterworld Medicine Assembly ====================-->
+    <RecipeDef>
+        <defName>assemble_medicineultratech</defName>
+        <label>Assemble Glitterworld Medicine</label>
+        <description>Make Glitterworld Medicine from nanites</description>
+        <jobString>Make Glitterworld Medicine from nanites</jobString>
+        <workSpeedStat>SmithingSpeed</workSpeedStat>
+        <effectWorking>Cook</effectWorking>
+        <soundWorking>Recipe_Machining</soundWorking>
+        <workAmount>1000</workAmount>
+        <unfinishedThingDef>UnfinishedComponent</unfinishedThingDef>
+        <ingredients>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>DZ_Nanites</li>
+                    </thingDefs>
+                </filter>
+                <count>3</count>
+            </li>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>Neutroamine</li>
                     </thingDefs>
                 </filter>
                 <count>5</count>
@@ -421,21 +531,21 @@
             <li>
                 <filter>
                     <thingDefs>
-                        <li>Plasteel</li>
+                        <li>MedicineIndustrial</li>
                     </thingDefs>
                 </filter>
-                <count>50</count>
+                <count>1</count>
             </li>
         </ingredients>
         <fixedIngredientFilter>
             <thingDefs>
                 <li>DZ_Nanites</li>
-                <li>ComponentSpacer</li>
-                <li>Plasteel</li>
+                <li>Neutroamine</li>
+                <li>MedicineIndustrial</li>
             </thingDefs>
         </fixedIngredientFilter>
         <products>
-            <AIPersonaCore>1</AIPersonaCore>
+            <MedicineUltratech>1</MedicineUltratech>
         </products>
         <researchPrerequisite>AdvancedFabrication</researchPrerequisite>
         <skillRequirements>
@@ -445,12 +555,12 @@
         <workSkill>Crafting</workSkill>
     </RecipeDef>
 
-<!--=============== Psychic Animal Pulser Assembly ====================-->
+<!--=============== Luciferium Assembly ====================-->
     <RecipeDef>
-        <defName>assemble_neurotrainer</defName>
-        <label>Assemble Neurotrainer Mech Serum</label>
-        <description>Make Neurotrainer Mech Serum from nanites</description>
-        <jobString>Make Neurotrainer Mech Serum from nanites</jobString>
+        <defName>assemble_luciferium</defName>
+        <label>Assemble Luciferium</label>
+        <description>Make Luciferium from nanites</description>
+        <jobString>Make Luciferium from nanites</jobString>
         <workSpeedStat>SmithingSpeed</workSpeedStat>
         <effectWorking>Cook</effectWorking>
         <soundWorking>Recipe_Machining</soundWorking>
@@ -463,34 +573,34 @@
                         <li>DZ_Nanites</li>
                     </thingDefs>
                 </filter>
-                <count>150</count>
+                <count>6</count>
             </li>
             <li>
                 <filter>
                     <thingDefs>
-                        <li>ComponentSpacer</li>
+                        <li>Neutroamine</li>
                     </thingDefs>
                 </filter>
-                <count>5</count>
+                <count>6</count>
             </li>
             <li>
                 <filter>
                     <thingDefs>
-                        <li>Plasteel</li>
+                        <li>Leather_Human</li>
                     </thingDefs>
                 </filter>
-                <count>50</count>
+                <count>6</count>
             </li>
         </ingredients>
         <fixedIngredientFilter>
             <thingDefs>
                 <li>DZ_Nanites</li>
-                <li>ComponentSpacer</li>
-                <li>Plasteel</li>
+                <li>Neutroamine</li>
+                <li>Leather_Human</li>
             </thingDefs>
         </fixedIngredientFilter>
         <products>
-            <AIPersonaCore>1</AIPersonaCore>
+            <Luciferium>1</Luciferium>
         </products>
         <researchPrerequisite>AdvancedFabrication</researchPrerequisite>
         <skillRequirements>
@@ -499,4 +609,5 @@
         </skillRequirements>
         <workSkill>Crafting</workSkill>
     </RecipeDef>
+
 </Defs>

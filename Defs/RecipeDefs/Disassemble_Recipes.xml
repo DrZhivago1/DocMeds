@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
 <!--=============== AI Persona Core disassembly ====================-->
@@ -104,8 +105,8 @@
         </products>
         <researchPrerequisite>AdvancedFabrication</researchPrerequisite>
         <skillRequirements>
-            <Crafting>15</Crafting>
-            <Intellectual>10</Intellectual>
+            <Crafting>13</Crafting>
+            <Intellectual>13</Intellectual>
         </skillRequirements>
         <workSkill>Crafting</workSkill>
     </RecipeDef>
@@ -159,8 +160,8 @@
         </products>
         <researchPrerequisite>AdvancedFabrication</researchPrerequisite>
         <skillRequirements>
-            <Crafting>15</Crafting>
-            <Intellectual>8</Intellectual>
+            <Crafting>11</Crafting>
+            <Intellectual>11</Intellectual>
         </skillRequirements>
         <workSkill>Crafting</workSkill>
     </RecipeDef>
@@ -214,8 +215,8 @@
         </products>
         <researchPrerequisite>AdvancedFabrication</researchPrerequisite>
         <skillRequirements>
-            <Crafting>15</Crafting>
-            <Intellectual>8</Intellectual>
+            <Crafting>12</Crafting>
+            <Intellectual>12</Intellectual>
         </skillRequirements>
         <workSkill>Crafting</workSkill>
     </RecipeDef>
@@ -269,8 +270,8 @@
         </products>
         <researchPrerequisite>AdvancedFabrication</researchPrerequisite>
         <skillRequirements>
-            <Crafting>15</Crafting>
-            <Intellectual>8</Intellectual>
+            <Crafting>9</Crafting>
+            <Intellectual>9</Intellectual>
         </skillRequirements>
         <workSkill>Crafting</workSkill>
     </RecipeDef>
@@ -326,8 +327,8 @@
         </products>
         <researchPrerequisite>AdvancedFabrication</researchPrerequisite>
         <skillRequirements>
-            <Crafting>15</Crafting>
-            <Intellectual>6</Intellectual>
+            <Crafting>7</Crafting>
+            <Intellectual>7</Intellectual>
         </skillRequirements>
         <workSkill>Crafting</workSkill>
     </RecipeDef>
