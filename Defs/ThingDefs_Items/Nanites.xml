@@ -10,10 +10,10 @@
       <drawSize>0.90</drawSize>
     </graphicData>
     <stackLimit>150</stackLimit>
-		<techLevel>Ultra</techLevel>
+    <techLevel>Ultra</techLevel>
     <statBases>
       <MaxHitPoints>50</MaxHitPoints>
-	<Beauty>0</Beauty>
+      <Beauty>0</Beauty>
       <MarketValue>50</MarketValue>
       <Mass>0.02</Mass>
       <Flammability>0</Flammability>
