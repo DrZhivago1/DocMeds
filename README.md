@@ -4,7 +4,7 @@ A mod which allows the disassembling and assembling of Archotech technology afte
 
 | Item | Assemble Skill (CRAFTING/INTELLECTUAL)| Disassemble Skill (CRAFTING/INTELLECTUAL) | Tech Required |
 | ------------- | ------------- | ------------- | ------------- |
-| AI Persona Core  | 20/20  | 15/15  | Nanite Production  |
+| AI Persona Core  | 20/20  | 15/15  | ```diff - Nanite Production```  |
 | MechSerum Healer  | 13/13  | 11/11  | Nanite Production  |
 | MechSerum Neurotrainer  | 11/11  | 9/9  | Nanite Production  |
 | MechSerum Resurrector  | 15/15  | 13/13  | Nanite Production  |
