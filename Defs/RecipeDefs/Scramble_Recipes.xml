@@ -50,8 +50,8 @@
         </products>
         <researchPrerequisite>DZ_NaniteProduction</researchPrerequisite>
         <skillRequirements>
-            <Crafting>15</Crafting>
-            <Intellectual>20</Intellectual>
+            <Crafting>7</Crafting>
+            <Intellectual>11</Intellectual>
         </skillRequirements>
         <workSkill>Intellectual</workSkill>
     </RecipeDef>

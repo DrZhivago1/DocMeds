@@ -188,6 +188,87 @@
                </value>
             </nomatch>
          </li>
+
+         <!--==========NEUTROAMINE UWU OWO ^W^==========-->
+
+         <!--===Test for Neutroamine costList, if it exists replace it, if it does not exist add it===-->
+         <li Class="PatchOperationConditional">
+            <xpath>Defs/ThingDef[defName="Neutroamine"]/costList</xpath>
+            <match Class="PatchOperationReplace">
+               <xpath>Defs/ThingDef[defName="Neutroamine"]/costList</xpath>
+               <value>
+                  <costList>
+                     <MedicineHerbal>1</MedicineHerbal>
+                     <Steel>5</Steel>
+                     <Chemfuel>5</Chemfuel>
+                  </costList>
+               </value>
+            </match>
+            <nomatch Class="PatchOperationAdd">
+               <xpath>Defs/ThingDef[defName="Neutroamine"]</xpath>
+               <value>
+                  <costList>
+                     <MedicineHerbal>1</MedicineHerbal>
+                     <Steel>5</Steel>
+                     <Chemfuel>5</Chemfuel>
+                  </costList>
+               </value>
+            </nomatch>
+         </li>
+         <!--===Test for Neutroamine recipeMaker, if it exists replace it, if it does not exist add it===-->
+         <li Class="PatchOperationConditional">
+            <xpath>Defs/ThingDef[defName="Neutroamine"]/recipeMaker</xpath>
+            <match Class="PatchOperationReplace">
+               <xpath>Defs/ThingDef[defName="Neutroamine"]/recipeMaker</xpath>
+               <value>
+                  <recipeMaker>
+                     <workSpeedStat>DrugSynthesisSpeed</workSpeedStat>
+                     <workSkill>Intellectual</workSkill>
+                     <recipeUsers>
+                        <li>DrugLab</li>
+                     </recipeUsers>
+                     <researchPrerequisite>MedicineProduction</researchPrerequisite>
+                     <skillRequirements>
+                        <Crafting>5</Crafting>
+                        <Intellectual>5</Intellectual>
+                     </skillRequirements>
+                  </recipeMaker>
+               </value>
+            </match>
+            <nomatch Class="PatchOperationAdd">
+               <xpath>Defs/ThingDef[defName="Neutroamine"]</xpath>
+               <value>
+                  <recipeMaker>
+                     <workSpeedStat>DrugSynthesisSpeed</workSpeedStat>
+                     <workSkill>Intellectual</workSkill>
+                     <recipeUsers>
+                        <li>DrugLab</li>
+                     </recipeUsers>
+                     <researchPrerequisite>MedicineProduction</researchPrerequisite>
+                     <skillRequirements>
+                        <Crafting>5</Crafting>
+                        <Intellectual>5</Intellectual>
+                     </skillRequirements>
+                  </recipeMaker>
+               </value>
+            </nomatch>
+         </li>
+         <!--===Test Neutroamine WorkToMake, if it exists replace it, if it does not exist add it===-->
+         <li Class="PatchOperationConditional">
+            <xpath>Defs/ThingDef[defName="Neutroamine"]/statBases/WorkToMake</xpath>
+            <match Class="PatchOperationReplace">
+               <xpath>Defs/ThingDef[defName="Neutroamine"]/statBases/WorkToMake</xpath>
+               <value>
+                  <WorkToMake>500</WorkToMake>
+               </value>
+            </match>
+            <nomatch Class="PatchOperationAdd">
+               <xpath>Defs/ThingDef[defName="Neutroamine"]/statBases</xpath>
+               <value>
+                  <WorkToMake>500</WorkToMake>
+               </value>
+            </nomatch>
+         </li>
       </operations>
    </Operation>
 
