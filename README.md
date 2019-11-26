@@ -10,10 +10,7 @@ A mod which allows the disassembling and assembling of Archotech technology afte
 | MechSerum Resurrector  | 15/15  | 13/13  | Nanite Production  |
 | Techprof Subpersona Core  | 12/12  | 12/12  | Nanite Production  |
 | Artifacts  | 10/10  | 7/7  | Nanite Production  |
-
 | Luciferium  | 10/10  | -  | Nanite Production  |
 | Medicine Ultratech  | 8/8  | -  | Nanite Production  |
 | Neutroamine  | 5/5  | -  | Medicine Production  |
-
-
 | MechSerum Neurotrainer (Scramble) | 7/11  | -  | Nanite Production  |
