@@ -5,15 +5,15 @@ A mod which allows the disassembling and assembling of Archotech technology afte
 | **Item** | **Assemble Skill** (CRAFTING/INTELLECTUAL)| **Disassemble Skill** (CRAFTING/INTELLECTUAL) | **Tech Required** | **Production Bench**  |
 | ------------- | :-------------: | :-------------: | :-------------: | :-------------: |
 | AI Persona Core  | 20/20  | 15/15  | Nanite Production | Fabrication Bench |
-| MechSerum Healer  | 13/13  | 11/11  | Nanite Production  | Fabrication Bench |
-| MechSerum Neurotrainer  | 11/11  | 9/9  | Nanite Production  | Fabrication Bench |
-| MechSerum Resurrector  | 15/15  | 13/13  | Nanite Production  | Fabrication Bench |
+| Healer Mech Serum  | 13/13  | 11/11  | Nanite Production  | Fabrication Bench |
+| Neurotrainer Mech Serum  | 11/11  | 9/9  | Nanite Production  | Fabrication Bench |
+| Resurrector Mech Serum  | 15/15  | 13/13  | Nanite Production  | Fabrication Bench |
 | Techprof Subpersona Core  | 12/12  | 12/12  | Nanite Production  | Fabrication Bench |
 | Artifacts  | 10/10  | 7/7  | Nanite Production  | Fabrication Bench |
 | Luciferium  | 10/10  | -  | Nanite Production  | Drug Lab |
-| Medicine Ultratech  | 8/8  | -  | Nanite Production  | Drug Lab |
+| Glitterworld Medicine  | 8/8  | -  | Nanite Production  | Drug Lab |
 | Neutroamine  | 5/5  | -  | Medicine Production  | Drug Lab |
-| MechSerum Neurotrainer (Scramble) | 7/11  | -  | Nanite Production  | Fabrication Bench |
+| Neurotrainer Mech Serum (Scramble) | 7/11  | -  | Nanite Production  | Fabrication Bench |
 
 ----------------------------------
 ### Compatibility:
