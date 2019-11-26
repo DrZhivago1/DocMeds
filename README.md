@@ -17,7 +17,7 @@ A mod which allows the disassembling and assembling of Archotech technology afte
 
 ----------------------------------
 ### Compatibility:
-**Save-Friendly**
+*Save-Friendly*
 - ["SF Orbital Trader Transponder"](https://steamcommunity.com/sharedfiles/filedetails/?id=1301120711)
 
 ----------------------------------
