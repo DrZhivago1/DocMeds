@@ -1,6 +1,6 @@
 ![Nanites](https://i.imgur.com/mqmV1Ub.png)  
 ========
-A mod which allows the disassembling and assembling of Archotech technology after the required "Nanite Production" research. This is a late-game technology and objects will produce nanites upon being disassembled.There is also a "scrambling" recipe included which allows players to randomly change neurotrainers... for a price (also note that all crafted neurotrainers are randomized). Items are ordered in highest-yielding nanite value (top to bottom) in the following table:
+A mod which allows the disassembling and assembling of Archotech technology after the required "Nanite Production" research. This is a late-game technology and objects will produce nanites upon being disassembled. There is also a "scrambling" recipe included which allows players to randomly change neurotrainers... for a price (also note that all crafted neurotrainers are randomized). Items are ordered in highest-yielding nanite value (top to bottom) in the following table:
 
 | **Item** | **Assemble Skill** (CRAFTING/INTELLECTUAL)| **Disassemble Skill** (CRAFTING/INTELLECTUAL) | **Tech Required** | **Production Bench**  |
 | ------------- | :-------------: | :-------------: | :-------------: | :-------------: |
