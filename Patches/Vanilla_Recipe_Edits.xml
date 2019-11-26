@@ -26,7 +26,9 @@
                <li>scramble_neurotrainer</li>
             </value>
          </li>
-         <!--==========LUCIFERIUM CRAFTABLE SENPAI UWU OWO ^W^==========-->
+
+         <!--==========LUCIFERIUM CRAFTABLE UWU OWO ^W^==========-->
+
          <!--===Test for Luciferium costList, if it exists replace it, if it does not exist add it===-->
          <li Class="PatchOperationConditional">
             <xpath>Defs/ThingDef[defName="Luciferium"]/costList</xpath>
@@ -63,7 +65,7 @@
                      <recipeUsers>
                         <li>DrugLab</li>
                      </recipeUsers>
-                     <researchPrerequisite>AdvancedFabrication</researchPrerequisite>
+                     <researchPrerequisite>DZ_NaniteProduction</researchPrerequisite>
                      <skillRequirements>
                         <Crafting>10</Crafting>
                         <Intellectual>10</Intellectual>
@@ -80,7 +82,7 @@
                      <recipeUsers>
                         <li>DrugLab</li>
                      </recipeUsers>
-                     <researchPrerequisite>AdvancedFabrication</researchPrerequisite>
+                     <researchPrerequisite>DZ_NaniteProduction</researchPrerequisite>
                      <skillRequirements>
                         <Crafting>10</Crafting>
                         <Intellectual>10</Intellectual>
@@ -105,7 +107,9 @@
                </value>
             </nomatch>
          </li>
+
          <!--==========GLITTERWORLD MEDICINE UWU OWO ^W^==========-->
+
          <!--===Test for Glitterworld Medicine costList, if it exists replace it, if it does not exist add it===-->
          <li Class="PatchOperationConditional">
             <xpath>Defs/ThingDef[defName="MedicineUltratech"]/costList</xpath>
@@ -142,7 +146,7 @@
                      <recipeUsers>
                         <li>DrugLab</li>
                      </recipeUsers>
-                     <researchPrerequisite>AdvancedFabrication</researchPrerequisite>
+                     <researchPrerequisite>DZ_NaniteProduction</researchPrerequisite>
                      <skillRequirements>
                         <Crafting>8</Crafting>
                         <Intellectual>8</Intellectual>
@@ -159,7 +163,7 @@
                      <recipeUsers>
                         <li>DrugLab</li>
                      </recipeUsers>
-                     <researchPrerequisite>AdvancedFabrication</researchPrerequisite>
+                     <researchPrerequisite>DZ_NaniteProduction</researchPrerequisite>
                      <skillRequirements>
                         <Crafting>8</Crafting>
                         <Intellectual>8</Intellectual>

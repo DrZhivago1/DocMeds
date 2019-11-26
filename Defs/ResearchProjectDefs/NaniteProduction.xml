@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <ResearchProjectDef>
+    <defName>DZ_NaniteProduction</defName>
+    <label>Nanite Production</label>
+    <techLevel>Spacer</techLevel>
+    <description>Discover how to harness the secrets of Archotech nanites through disassembly and repurposing them.</description>
+    <baseCost>5000</baseCost>
+    <prerequisites>
+      <li>AdvancedFabrication</li>
+    </prerequisites>
+    <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+    <requiredResearchFacilities>
+      <li>MultiAnalyzer</li>
+    </requiredResearchFacilities>
+    <researchViewX>14</researchViewX>
+    <researchViewY>5</researchViewY>
+  </ResearchProjectDef>
+
+</Defs>

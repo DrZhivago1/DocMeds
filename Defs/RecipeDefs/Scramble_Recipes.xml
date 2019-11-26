@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="utf-8" ?>
 
 <Defs>
-<!--=============== Scramble Neurotrainer ====================-->
+    <!--=============== Scramble Neurotrainer ====================-->
     <RecipeDef>
         <defName>scramble_neurotrainer</defName>
         <label>Scramble Neurotrainer</label>
         <description>Scramble Neurotrainer Skill</description>
         <jobString>Scramble Neurotrainer Skill</jobString>
         <workSpeedStat>SmithingSpeed</workSpeedStat>
-        <effectWorking>Cook</effectWorking>
+        <effectWorking>Smith</effectWorking>
         <soundWorking>Recipe_Machining</soundWorking>
-        <workAmount>1000</workAmount>
+        <workAmount>1500</workAmount>
         <unfinishedThingDef>UnfinishedComponent</unfinishedThingDef>
         <ingredients>
             <li>
@@ -48,11 +48,11 @@
         <products>
             <MechSerumNeurotrainer>1</MechSerumNeurotrainer>
         </products>
-        <researchPrerequisite>AdvancedFabrication</researchPrerequisite>
+        <researchPrerequisite>DZ_NaniteProduction</researchPrerequisite>
         <skillRequirements>
-            <Crafting>20</Crafting>
+            <Crafting>15</Crafting>
             <Intellectual>20</Intellectual>
         </skillRequirements>
-        <workSkill>Crafting</workSkill>
+        <workSkill>Intellectual</workSkill>
     </RecipeDef>
 </Defs>

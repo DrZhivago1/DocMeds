@@ -1,17 +1,24 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-<!--=============== AI Persona Core Assembly ====================-->
-    <RecipeDef>
+    <RecipeDef Name="Assemble_Nanites_Base" Abstract="True">
+        <workSpeedStat>SmithingSpeed</workSpeedStat>
+        <effectWorking>Smith</effectWorking>
+        <soundWorking>Recipe_Machining</soundWorking>
+        <workAmount>2500</workAmount>
+        <unfinishedThingDef>UnfinishedComponent</unfinishedThingDef>
+        <researchPrerequisite>DZ_NaniteProduction</researchPrerequisite>
+        <workSkill>Crafting</workSkill>
+    </RecipeDef>
+
+    <!--=============== RARE TECH FROM NANITES ====================-->
+
+    <!--=== AI Persona Core Assembly ===-->
+    <RecipeDef ParentName="Assemble_Nanites_Base">
         <defName>assemble_aipersonacore</defName>
         <label>Assemble AI Persona Core</label>
         <description>Make AI Persona Core from nanites</description>
         <jobString>Make AI Persona Core from nanites</jobString>
-        <workSpeedStat>SmithingSpeed</workSpeedStat>
-        <effectWorking>Cook</effectWorking>
-        <soundWorking>Recipe_Machining</soundWorking>
-        <workAmount>1000</workAmount>
-        <unfinishedThingDef>UnfinishedComponent</unfinishedThingDef>
         <ingredients>
             <li>
                 <filter>
@@ -48,80 +55,18 @@
         <products>
             <AIPersonaCore>1</AIPersonaCore>
         </products>
-        <researchPrerequisite>AdvancedFabrication</researchPrerequisite>
         <skillRequirements>
             <Crafting>20</Crafting>
             <Intellectual>20</Intellectual>
         </skillRequirements>
-        <workSkill>Crafting</workSkill>
     </RecipeDef>
 
-<!--=============== Resurrector Mech Serum Assembly ====================-->
-    <RecipeDef>
-        <defName>assemble_resmechserum</defName>
-        <label>Assemble Resurrector Mech Serum</label>
-        <description>Make Resurrector Mech Serum from nanites</description>
-        <jobString>Make Resurrector Mech Serum from nanites</jobString>
-        <workSpeedStat>SmithingSpeed</workSpeedStat>
-        <effectWorking>Cook</effectWorking>
-        <soundWorking>Recipe_Machining</soundWorking>
-        <workAmount>1000</workAmount>
-        <unfinishedThingDef>UnfinishedComponent</unfinishedThingDef>
-        <ingredients>
-            <li>
-                <filter>
-                    <thingDefs>
-                        <li>DZ_Nanites</li>
-                    </thingDefs>
-                </filter>
-                <count>35</count>
-            </li>
-            <li>
-                <filter>
-                    <thingDefs>
-                        <li>ComponentIndustrial</li>
-                    </thingDefs>
-                </filter>
-                <count>5</count>
-            </li>
-            <li>
-                <filter>
-                    <thingDefs>
-                        <li>Plasteel</li>
-                    </thingDefs>
-                </filter>
-                <count>10</count>
-            </li>
-        </ingredients>
-        <fixedIngredientFilter>
-            <thingDefs>
-                <li>DZ_Nanites</li>
-                <li>ComponentIndustrial</li>
-                <li>Plasteel</li>
-            </thingDefs>
-        </fixedIngredientFilter>
-        <products>
-            <MechSerumResurrector>1</MechSerumResurrector>
-        </products>
-        <researchPrerequisite>AdvancedFabrication</researchPrerequisite>
-        <skillRequirements>
-            <Crafting>15</Crafting>
-            <Intellectual>15</Intellectual>
-        </skillRequirements>
-        <workSkill>Crafting</workSkill>
-    </RecipeDef>
-
-<!--=============== Healer Mech Serum Assembly ====================-->
-    <RecipeDef>
+    <!--=== Healer Mech Serum Assembly ===-->
+    <RecipeDef ParentName="Assemble_Nanites_Base">
         <defName>assemble_healer</defName>
         <label>Assemble Healer Mech Serum</label>
         <description>Make Healer Mech Serum from nanites</description>
         <jobString>Make Healer Mech Serum from nanites</jobString>
-        <workSpeedStat>SmithingSpeed</workSpeedStat>
-        <effectWorking>Cook</effectWorking>
-        <soundWorking>Recipe_Machining</soundWorking>
-        <workAmount>1000</workAmount>
-        <unfinishedThingDef>UnfinishedComponent</unfinishedThingDef>
         <ingredients>
             <li>
                 <filter>
@@ -158,80 +103,18 @@
         <products>
             <MechSerumHealer>1</MechSerumHealer>
         </products>
-        <researchPrerequisite>AdvancedFabrication</researchPrerequisite>
         <skillRequirements>
             <Crafting>13</Crafting>
             <Intellectual>13</Intellectual>
         </skillRequirements>
-        <workSkill>Crafting</workSkill>
     </RecipeDef>
 
-<!--=============== Techprof Subpersona Core Assembly ====================-->
-    <RecipeDef>
-        <defName>assemble_techprofcore</defName>
-        <label>Assemble Techprof Subpersona Core</label>
-        <description>Make Techprof Subpersona Core from nanites</description>
-        <jobString>Make Techprof Subpersona Core from nanites</jobString>
-        <workSpeedStat>SmithingSpeed</workSpeedStat>
-        <effectWorking>Cook</effectWorking>
-        <soundWorking>Recipe_Machining</soundWorking>
-        <workAmount>1000</workAmount>
-        <unfinishedThingDef>UnfinishedComponent</unfinishedThingDef>
-        <ingredients>
-            <li>
-                <filter>
-                    <thingDefs>
-                        <li>DZ_Nanites</li>
-                    </thingDefs>
-                </filter>
-                <count>20</count>
-            </li>
-            <li>
-                <filter>
-                    <thingDefs>
-                        <li>ComponentIndustrial</li>
-                    </thingDefs>
-                </filter>
-                <count>5</count>
-            </li>
-            <li>
-                <filter>
-                    <thingDefs>
-                        <li>Plasteel</li>
-                    </thingDefs>
-                </filter>
-                <count>10</count>
-            </li>
-        </ingredients>
-        <fixedIngredientFilter>
-            <thingDefs>
-                <li>DZ_Nanites</li>
-                <li>ComponentIndustrial</li>
-                <li>Plasteel</li>
-            </thingDefs>
-        </fixedIngredientFilter>
-        <products>
-            <TechprofSubpersonaCore>1</TechprofSubpersonaCore>
-        </products>
-        <researchPrerequisite>AdvancedFabrication</researchPrerequisite>
-        <skillRequirements>
-            <Crafting>12</Crafting>
-            <Intellectual>12</Intellectual>
-        </skillRequirements>
-        <workSkill>Crafting</workSkill>
-    </RecipeDef>
-
-<!--=============== Neurotrainer Mech Serum assembly ====================-->
-    <RecipeDef>
+    <!--=== Neurotrainer Mech Serum assembly ===-->
+    <RecipeDef ParentName="Assemble_Nanites_Base">
         <defName>assemble_neurotrainer</defName>
         <label>Assemble Neurotrainer Mech Serum</label>
         <description>Make Neurotrainer Mech Serum from nanites</description>
         <jobString>Make Neurotrainer Mech Serum from nanites</jobString>
-        <workSpeedStat>SmithingSpeed</workSpeedStat>
-        <effectWorking>Cook</effectWorking>
-        <soundWorking>Recipe_Machining</soundWorking>
-        <workAmount>1000</workAmount>
-        <unfinishedThingDef>UnfinishedComponent</unfinishedThingDef>
         <ingredients>
             <li>
                 <filter>
@@ -268,27 +151,116 @@
         <products>
             <MechSerumNeurotrainer>1</MechSerumNeurotrainer>
         </products>
-        <researchPrerequisite>AdvancedFabrication</researchPrerequisite>
         <skillRequirements>
             <Crafting>11</Crafting>
             <Intellectual>11</Intellectual>
         </skillRequirements>
-        <workSkill>Crafting</workSkill>
     </RecipeDef>
 
-<!--=============== PSYCHIC ARTIFACTS NOTICE ME SENPAI ====================-->
+    <!--=== Resurrector Mech Serum Assembly ===-->
+    <RecipeDef ParentName="Assemble_Nanites_Base">
+        <defName>assemble_resmechserum</defName>
+        <label>Assemble Resurrector Mech Serum</label>
+        <description>Make Resurrector Mech Serum from nanites</description>
+        <jobString>Make Resurrector Mech Serum from nanites</jobString>
+        <ingredients>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>DZ_Nanites</li>
+                    </thingDefs>
+                </filter>
+                <count>35</count>
+            </li>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>ComponentIndustrial</li>
+                    </thingDefs>
+                </filter>
+                <count>5</count>
+            </li>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>Plasteel</li>
+                    </thingDefs>
+                </filter>
+                <count>10</count>
+            </li>
+        </ingredients>
+        <fixedIngredientFilter>
+            <thingDefs>
+                <li>DZ_Nanites</li>
+                <li>ComponentIndustrial</li>
+                <li>Plasteel</li>
+            </thingDefs>
+        </fixedIngredientFilter>
+        <products>
+            <MechSerumResurrector>1</MechSerumResurrector>
+        </products>
+        <skillRequirements>
+            <Crafting>15</Crafting>
+            <Intellectual>15</Intellectual>
+        </skillRequirements>
+    </RecipeDef>
 
-<!--=============== Psychic Shock Lance Assembly ====================-->
-    <RecipeDef>
+    <!--=== Techprof Subpersona Core Assembly ===-->
+    <RecipeDef ParentName="Assemble_Nanites_Base">
+        <defName>assemble_techprofcore</defName>
+        <label>Assemble Techprof Subpersona Core</label>
+        <description>Make Techprof Subpersona Core from nanites</description>
+        <jobString>Make Techprof Subpersona Core from nanites</jobString>
+        <ingredients>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>DZ_Nanites</li>
+                    </thingDefs>
+                </filter>
+                <count>20</count>
+            </li>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>ComponentIndustrial</li>
+                    </thingDefs>
+                </filter>
+                <count>5</count>
+            </li>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>Plasteel</li>
+                    </thingDefs>
+                </filter>
+                <count>10</count>
+            </li>
+        </ingredients>
+        <fixedIngredientFilter>
+            <thingDefs>
+                <li>DZ_Nanites</li>
+                <li>ComponentIndustrial</li>
+                <li>Plasteel</li>
+            </thingDefs>
+        </fixedIngredientFilter>
+        <products>
+            <TechprofSubpersonaCore>1</TechprofSubpersonaCore>
+        </products>
+        <skillRequirements>
+            <Crafting>12</Crafting>
+            <Intellectual>12</Intellectual>
+        </skillRequirements>
+    </RecipeDef>
+
+    <!--=============== PSYCHIC ARTIFACTS NOTICE ME SENPAI ====================-->
+
+    <!--=== Psychic Shock Lance Assembly ===-->
+    <RecipeDef ParentName="Assemble_Nanites_Base">
         <defName>assemble_psychicshocklance</defName>
         <label>Assemble Psychic Shock Lance</label>
         <description>Make Psychic Shock Lance from nanites</description>
         <jobString>Make Psychic Shock Lance from nanites</jobString>
-        <workSpeedStat>SmithingSpeed</workSpeedStat>
-        <effectWorking>Cook</effectWorking>
-        <soundWorking>Recipe_Machining</soundWorking>
-        <workAmount>1000</workAmount>
-        <unfinishedThingDef>UnfinishedComponent</unfinishedThingDef>
         <ingredients>
             <li>
                 <filter>
@@ -325,25 +297,18 @@
         <products>
             <PsychicShockLance>1</PsychicShockLance>
         </products>
-        <researchPrerequisite>AdvancedFabrication</researchPrerequisite>
         <skillRequirements>
             <Crafting>10</Crafting>
             <Intellectual>10</Intellectual>
         </skillRequirements>
-        <workSkill>Crafting</workSkill>
     </RecipeDef>
 
-<!--=============== Psychic Sooth Pulser Assembly ====================-->
-    <RecipeDef>
+    <!--=== Psychic Sooth Pulser Assembly ===-->
+    <RecipeDef ParentName="Assemble_Nanites_Base">
         <defName>assemble_psychicsoothepulser</defName>
         <label>Assemble Psychic Soothe Pulser</label>
         <description>Make Psychic Soothe Pulser from nanites</description>
         <jobString>Make Psychic Soothe Pulser from nanites</jobString>
-        <workSpeedStat>SmithingSpeed</workSpeedStat>
-        <effectWorking>Cook</effectWorking>
-        <soundWorking>Recipe_Machining</soundWorking>
-        <workAmount>1000</workAmount>
-        <unfinishedThingDef>UnfinishedComponent</unfinishedThingDef>
         <ingredients>
             <li>
                 <filter>
@@ -380,25 +345,18 @@
         <products>
             <PsychicSoothePulser>1</PsychicSoothePulser>
         </products>
-        <researchPrerequisite>AdvancedFabrication</researchPrerequisite>
         <skillRequirements>
             <Crafting>10</Crafting>
             <Intellectual>10</Intellectual>
         </skillRequirements>
-        <workSkill>Crafting</workSkill>
     </RecipeDef>
 
-<!--=============== Psychic Insanity Lance Assembly ====================-->
-    <RecipeDef>
+    <!--=== Psychic Insanity Lance Assembly ===-->
+    <RecipeDef ParentName="Assemble_Nanites_Base">
         <defName>assemble_psychicinsanitylance</defName>
         <label>Assemble Psychic Insanity Lance</label>
         <description>Make Psychic Insanity Lance from nanites</description>
         <jobString>Make Psychic Insanity Lance from nanites</jobString>
-        <workSpeedStat>SmithingSpeed</workSpeedStat>
-        <effectWorking>Cook</effectWorking>
-        <soundWorking>Recipe_Machining</soundWorking>
-        <workAmount>1000</workAmount>
-        <unfinishedThingDef>UnfinishedComponent</unfinishedThingDef>
         <ingredients>
             <li>
                 <filter>
@@ -435,25 +393,18 @@
         <products>
             <PsychicInsanityLance>1</PsychicInsanityLance>
         </products>
-        <researchPrerequisite>AdvancedFabrication</researchPrerequisite>
         <skillRequirements>
             <Crafting>10</Crafting>
             <Intellectual>10</Intellectual>
         </skillRequirements>
-        <workSkill>Crafting</workSkill>
     </RecipeDef>
 
-<!--=============== Psychic Animal Pulser Assembly ====================-->
-    <RecipeDef>
+    <!--=== Psychic Animal Pulser Assembly ===-->
+    <RecipeDef ParentName="Assemble_Nanites_Base">
         <defName>assemble_psychicanimalpulser</defName>
         <label>Assemble Psychic Animal Pulser</label>
         <description>Make Psychic Animal Pulser from nanites</description>
         <jobString>Make Psychic Animal Pulser from nanites</jobString>
-        <workSpeedStat>SmithingSpeed</workSpeedStat>
-        <effectWorking>Cook</effectWorking>
-        <soundWorking>Recipe_Machining</soundWorking>
-        <workAmount>1000</workAmount>
-        <unfinishedThingDef>UnfinishedComponent</unfinishedThingDef>
         <ingredients>
             <li>
                 <filter>
@@ -490,27 +441,20 @@
         <products>
             <PsychicAnimalPulser>1</PsychicAnimalPulser>
         </products>
-        <researchPrerequisite>AdvancedFabrication</researchPrerequisite>
         <skillRequirements>
             <Crafting>10</Crafting>
             <Intellectual>10</Intellectual>
         </skillRequirements>
-        <workSkill>Crafting</workSkill>
     </RecipeDef>
 
-<!--=============== OTHER OBJECTS FROM NANITES ====================-->
+    <!--=============== OTHER OBJECTS FROM NANITES ====================-->
 
-<!--=============== Glitterworld Medicine Assembly ====================-->
-    <RecipeDef>
+    <!--=== Glitterworld Medicine Assembly ===-->
+    <!--<RecipeDef ParentName="Assemble_Nanites_Base">
         <defName>assemble_medicineultratech</defName>
         <label>Assemble Glitterworld Medicine</label>
         <description>Make Glitterworld Medicine from nanites</description>
         <jobString>Make Glitterworld Medicine from nanites</jobString>
-        <workSpeedStat>SmithingSpeed</workSpeedStat>
-        <effectWorking>Cook</effectWorking>
-        <soundWorking>Recipe_Machining</soundWorking>
-        <workAmount>1000</workAmount>
-        <unfinishedThingDef>UnfinishedComponent</unfinishedThingDef>
         <ingredients>
             <li>
                 <filter>
@@ -547,25 +491,18 @@
         <products>
             <MedicineUltratech>1</MedicineUltratech>
         </products>
-        <researchPrerequisite>AdvancedFabrication</researchPrerequisite>
         <skillRequirements>
             <Crafting>20</Crafting>
             <Intellectual>20</Intellectual>
         </skillRequirements>
-        <workSkill>Crafting</workSkill>
-    </RecipeDef>
+    </RecipeDef>-->
 
-<!--=============== Luciferium Assembly ====================-->
-    <RecipeDef>
+    <!--=== Luciferium Assembly ===-->
+    <!--<RecipeDef ParentName="Assemble_Nanites_Base">
         <defName>assemble_luciferium</defName>
         <label>Assemble Luciferium</label>
         <description>Make Luciferium from nanites</description>
         <jobString>Make Luciferium from nanites</jobString>
-        <workSpeedStat>SmithingSpeed</workSpeedStat>
-        <effectWorking>Cook</effectWorking>
-        <soundWorking>Recipe_Machining</soundWorking>
-        <workAmount>1000</workAmount>
-        <unfinishedThingDef>UnfinishedComponent</unfinishedThingDef>
         <ingredients>
             <li>
                 <filter>
@@ -602,12 +539,10 @@
         <products>
             <Luciferium>1</Luciferium>
         </products>
-        <researchPrerequisite>AdvancedFabrication</researchPrerequisite>
         <skillRequirements>
             <Crafting>20</Crafting>
             <Intellectual>20</Intellectual>
         </skillRequirements>
-        <workSkill>Crafting</workSkill>
-    </RecipeDef>
+    </RecipeDef>-->
 
 </Defs>
