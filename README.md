@@ -14,3 +14,14 @@ A mod which allows the disassembling and assembling of Archotech technology afte
 | Medicine Ultratech  | 8/8  | -  | Nanite Production  | Drug Lab |
 | Neutroamine  | 5/5  | -  | Medicine Production  | Drug Lab |
 | MechSerum Neurotrainer (Scramble) | 7/11  | -  | Nanite Production  | Fabrication Bench |
+
+### Compatibility:
+**Save-Friendly**
+- ["SF Orbital Trader Transponder"](https://steamcommunity.com/sharedfiles/filedetails/?id=1301120711)
+
+### Changelog:
+_Version(DD/MM/YYYY)_  
+**v1.0.0 (25/11/2019)**
+```
+--Initial release.
+```
