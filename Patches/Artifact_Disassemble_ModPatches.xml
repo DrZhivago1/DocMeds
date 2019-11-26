@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+    <!-- IF SF [1.0] Orbital Trader Transponder is installed: disallow it in disassembling recipe -->
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>SF [1.0] Orbital Trader Transponder</li>
+        </mods>
+        <match Class="PatchOperationSequence">
+            <operations>
+                <li Class="PatchOperationAdd">
+                    <xpath>Defs/RecipeDef[defName="disassemble_psychicartifact"]/fixedIngredientFilter/disallowedThingDefs</xpath>
+                    <value>
+                        <li>SFOrbitalTraderTransponder</li>
+                    </value>
+                </li>
+            </operations>
+        </match>
+    </Operation>
+
+</Patch>

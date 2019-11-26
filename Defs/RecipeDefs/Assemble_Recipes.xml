@@ -16,7 +16,7 @@
     <!--=== AI Persona Core Assembly ===-->
     <RecipeDef ParentName="Assemble_Nanites_Base">
         <defName>assemble_aipersonacore</defName>
-        <label>Assemble AI Persona Core</label>
+        <label>assemble AI persona core</label>
         <description>Make AI Persona Core from nanites</description>
         <jobString>Make AI Persona Core from nanites</jobString>
         <ingredients>
@@ -64,7 +64,7 @@
     <!--=== Healer Mech Serum Assembly ===-->
     <RecipeDef ParentName="Assemble_Nanites_Base">
         <defName>assemble_healer</defName>
-        <label>Assemble Healer Mech Serum</label>
+        <label>assemble healer mech serum</label>
         <description>Make Healer Mech Serum from nanites</description>
         <jobString>Make Healer Mech Serum from nanites</jobString>
         <ingredients>
@@ -112,7 +112,7 @@
     <!--=== Neurotrainer Mech Serum assembly ===-->
     <RecipeDef ParentName="Assemble_Nanites_Base">
         <defName>assemble_neurotrainer</defName>
-        <label>Assemble Neurotrainer Mech Serum</label>
+        <label>assemble neurotrainer mech serum</label>
         <description>Make Neurotrainer Mech Serum from nanites</description>
         <jobString>Make Neurotrainer Mech Serum from nanites</jobString>
         <ingredients>
@@ -160,7 +160,7 @@
     <!--=== Resurrector Mech Serum Assembly ===-->
     <RecipeDef ParentName="Assemble_Nanites_Base">
         <defName>assemble_resmechserum</defName>
-        <label>Assemble Resurrector Mech Serum</label>
+        <label>assemble resurrector mech serum</label>
         <description>Make Resurrector Mech Serum from nanites</description>
         <jobString>Make Resurrector Mech Serum from nanites</jobString>
         <ingredients>
@@ -208,7 +208,7 @@
     <!--=== Techprof Subpersona Core Assembly ===-->
     <RecipeDef ParentName="Assemble_Nanites_Base">
         <defName>assemble_techprofcore</defName>
-        <label>Assemble Techprof Subpersona Core</label>
+        <label>assemble techprof subpersona core</label>
         <description>Make Techprof Subpersona Core from nanites</description>
         <jobString>Make Techprof Subpersona Core from nanites</jobString>
         <ingredients>
@@ -258,7 +258,7 @@
     <!--=== Psychic Shock Lance Assembly ===-->
     <RecipeDef ParentName="Assemble_Nanites_Base">
         <defName>assemble_psychicshocklance</defName>
-        <label>Assemble Psychic Shock Lance</label>
+        <label>assemble psychic shock lance</label>
         <description>Make Psychic Shock Lance from nanites</description>
         <jobString>Make Psychic Shock Lance from nanites</jobString>
         <ingredients>
@@ -306,7 +306,7 @@
     <!--=== Psychic Sooth Pulser Assembly ===-->
     <RecipeDef ParentName="Assemble_Nanites_Base">
         <defName>assemble_psychicsoothepulser</defName>
-        <label>Assemble Psychic Soothe Pulser</label>
+        <label>assemble psychic soothe pulser</label>
         <description>Make Psychic Soothe Pulser from nanites</description>
         <jobString>Make Psychic Soothe Pulser from nanites</jobString>
         <ingredients>
@@ -354,7 +354,7 @@
     <!--=== Psychic Insanity Lance Assembly ===-->
     <RecipeDef ParentName="Assemble_Nanites_Base">
         <defName>assemble_psychicinsanitylance</defName>
-        <label>Assemble Psychic Insanity Lance</label>
+        <label>assemble psychic insanity lance</label>
         <description>Make Psychic Insanity Lance from nanites</description>
         <jobString>Make Psychic Insanity Lance from nanites</jobString>
         <ingredients>
@@ -402,7 +402,7 @@
     <!--=== Psychic Animal Pulser Assembly ===-->
     <RecipeDef ParentName="Assemble_Nanites_Base">
         <defName>assemble_psychicanimalpulser</defName>
-        <label>Assemble Psychic Animal Pulser</label>
+        <label>assemble psychic animal pulser</label>
         <description>Make Psychic Animal Pulser from nanites</description>
         <jobString>Make Psychic Animal Pulser from nanites</jobString>
         <ingredients>

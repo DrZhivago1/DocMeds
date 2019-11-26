@@ -16,7 +16,7 @@
     <!--=== AI Persona Core disassembly ===-->
     <RecipeDef ParentName="Disassemble_Nanites_Base">
         <defName>disassemble_aipersonacore</defName>
-        <label>Disassemble AI Persona Core</label>
+        <label>Disassemble AI persona core</label>
         <description>Make nanites from a AI Persona Core</description>
         <jobString>Make nanites from a AI Persona Core</jobString>
         <ingredients>
@@ -64,7 +64,7 @@
     <!--=== Healer Mech Serum disassembly ===-->
     <RecipeDef ParentName="Disassemble_Nanites_Base">
         <defName>disassemble_healer</defName>
-        <label>Disassemble Healer Mech Serum</label>
+        <label>disassemble healer mech serum</label>
         <description>Make nanites from a Healer Mech Serum</description>
         <jobString>Make nanites from a Healer Mech Serum</jobString>
         <ingredients>
@@ -112,7 +112,7 @@
     <!--=== Neurotrainer Mech Serum disassembly ===-->
     <RecipeDef ParentName="Disassemble_Nanites_Base">
         <defName>disassemble_neurotrainer</defName>
-        <label>Disassemble Neurotrainer Mech Serum</label>
+        <label>disassemble neurotrainer mech serum</label>
         <description>Make nanites from a Neutrotrainer Mech Serum</description>
         <jobString>Make nanites from a Neutrotrainer Mech Serum</jobString>
         <ingredients>
@@ -160,7 +160,7 @@
     <!--=== Resurrector Mech Serum disassembly ===-->
     <RecipeDef ParentName="Disassemble_Nanites_Base">
         <defName>disassemble_resmechserum</defName>
-        <label>Disassemble Resurrector Mech Serum</label>
+        <label>disassemble resurrector mech serum</label>
         <description>Make nanites from a Resurrector Mech Serum</description>
         <jobString>Make nanites from a Resurrector Mech Serum</jobString>
         <ingredients>
@@ -208,7 +208,7 @@
     <!--=== Techprof Subpersona Core disassembly ===-->
     <RecipeDef ParentName="Disassemble_Nanites_Base">
         <defName>disassemble_techprofcore</defName>
-        <label>Disassemble Techprof Subpersona Core</label>
+        <label>disassemble techprof subpersona core</label>
         <description>Make nanites from a Techprof Subpersona Core</description>
         <jobString>Make nanites from a Techprof Subpersona Core</jobString>
         <ingredients>
@@ -257,7 +257,7 @@
 
     <RecipeDef ParentName="Disassemble_Nanites_Base">
         <defName>disassemble_psychicartifact</defName>
-        <label>Disassemble Psychic Artifacts</label>
+        <label>disassemble artifacts</label>
         <description>Make nanites from a Animal Artifacts</description>
         <jobString>Make nanites from a Animal Artifacts</jobString>
         <ingredients>
@@ -294,6 +294,7 @@
             <categories>
                 <li>Artifacts</li>
             </categories>
+            <disallowedThingDefs />
         </fixedIngredientFilter>
         <products>
             <DZ_Nanites>10</DZ_Nanites>
