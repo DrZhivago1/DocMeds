@@ -1,0 +1,548 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+    <RecipeDef Name="Assemble_Nanites_Base" Abstract="True">
+        <workSpeedStat>SmithingSpeed</workSpeedStat>
+        <effectWorking>Smith</effectWorking>
+        <soundWorking>Recipe_Machining</soundWorking>
+        <workAmount>2500</workAmount>
+        <unfinishedThingDef>UnfinishedComponent</unfinishedThingDef>
+        <researchPrerequisite>DZ_NaniteProduction</researchPrerequisite>
+        <workSkill>Crafting</workSkill>
+    </RecipeDef>
+
+    <!--=============== RARE TECH FROM NANITES ====================-->
+
+    <!--=== AI Persona Core Assembly ===-->
+    <RecipeDef ParentName="Assemble_Nanites_Base">
+        <defName>assemble_aipersonacore</defName>
+        <label>assemble AI persona core</label>
+        <description>Make AI Persona Core from nanites</description>
+        <jobString>Make AI Persona Core from nanites</jobString>
+        <ingredients>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>DZ_Nanites</li>
+                    </thingDefs>
+                </filter>
+                <count>150</count>
+            </li>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>ComponentSpacer</li>
+                    </thingDefs>
+                </filter>
+                <count>5</count>
+            </li>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>Plasteel</li>
+                    </thingDefs>
+                </filter>
+                <count>50</count>
+            </li>
+        </ingredients>
+        <fixedIngredientFilter>
+            <thingDefs>
+                <li>DZ_Nanites</li>
+                <li>ComponentSpacer</li>
+                <li>Plasteel</li>
+            </thingDefs>
+        </fixedIngredientFilter>
+        <products>
+            <AIPersonaCore>1</AIPersonaCore>
+        </products>
+        <skillRequirements>
+            <Crafting>20</Crafting>
+            <Intellectual>20</Intellectual>
+        </skillRequirements>
+    </RecipeDef>
+
+    <!--=== Healer Mech Serum Assembly ===-->
+    <RecipeDef ParentName="Assemble_Nanites_Base">
+        <defName>assemble_healer</defName>
+        <label>assemble healer mech serum</label>
+        <description>Make Healer Mech Serum from nanites</description>
+        <jobString>Make Healer Mech Serum from nanites</jobString>
+        <ingredients>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>DZ_Nanites</li>
+                    </thingDefs>
+                </filter>
+                <count>25</count>
+            </li>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>ComponentIndustrial</li>
+                    </thingDefs>
+                </filter>
+                <count>5</count>
+            </li>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>Plasteel</li>
+                    </thingDefs>
+                </filter>
+                <count>10</count>
+            </li>
+        </ingredients>
+        <fixedIngredientFilter>
+            <thingDefs>
+                <li>DZ_Nanites</li>
+                <li>ComponentIndustrial</li>
+                <li>Plasteel</li>
+            </thingDefs>
+        </fixedIngredientFilter>
+        <products>
+            <MechSerumHealer>1</MechSerumHealer>
+        </products>
+        <skillRequirements>
+            <Crafting>13</Crafting>
+            <Intellectual>13</Intellectual>
+        </skillRequirements>
+    </RecipeDef>
+
+    <!--=== Neurotrainer Mech Serum assembly ===-->
+    <RecipeDef ParentName="Assemble_Nanites_Base">
+        <defName>assemble_neurotrainer</defName>
+        <label>assemble neurotrainer mech serum</label>
+        <description>Make Neurotrainer Mech Serum from nanites</description>
+        <jobString>Make Neurotrainer Mech Serum from nanites</jobString>
+        <ingredients>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>DZ_Nanites</li>
+                    </thingDefs>
+                </filter>
+                <count>15</count>
+            </li>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>ComponentIndustrial</li>
+                    </thingDefs>
+                </filter>
+                <count>5</count>
+            </li>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>Plasteel</li>
+                    </thingDefs>
+                </filter>
+                <count>10</count>
+            </li>
+        </ingredients>
+        <fixedIngredientFilter>
+            <thingDefs>
+                <li>DZ_Nanites</li>
+                <li>ComponentIndustrial</li>
+                <li>Plasteel</li>
+            </thingDefs>
+        </fixedIngredientFilter>
+        <products>
+            <MechSerumNeurotrainer>1</MechSerumNeurotrainer>
+        </products>
+        <skillRequirements>
+            <Crafting>11</Crafting>
+            <Intellectual>11</Intellectual>
+        </skillRequirements>
+    </RecipeDef>
+
+    <!--=== Resurrector Mech Serum Assembly ===-->
+    <RecipeDef ParentName="Assemble_Nanites_Base">
+        <defName>assemble_resmechserum</defName>
+        <label>assemble resurrector mech serum</label>
+        <description>Make Resurrector Mech Serum from nanites</description>
+        <jobString>Make Resurrector Mech Serum from nanites</jobString>
+        <ingredients>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>DZ_Nanites</li>
+                    </thingDefs>
+                </filter>
+                <count>35</count>
+            </li>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>ComponentIndustrial</li>
+                    </thingDefs>
+                </filter>
+                <count>5</count>
+            </li>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>Plasteel</li>
+                    </thingDefs>
+                </filter>
+                <count>10</count>
+            </li>
+        </ingredients>
+        <fixedIngredientFilter>
+            <thingDefs>
+                <li>DZ_Nanites</li>
+                <li>ComponentIndustrial</li>
+                <li>Plasteel</li>
+            </thingDefs>
+        </fixedIngredientFilter>
+        <products>
+            <MechSerumResurrector>1</MechSerumResurrector>
+        </products>
+        <skillRequirements>
+            <Crafting>15</Crafting>
+            <Intellectual>15</Intellectual>
+        </skillRequirements>
+    </RecipeDef>
+
+    <!--=== Techprof Subpersona Core Assembly ===-->
+    <RecipeDef ParentName="Assemble_Nanites_Base">
+        <defName>assemble_techprofcore</defName>
+        <label>assemble techprof subpersona core</label>
+        <description>Make Techprof Subpersona Core from nanites</description>
+        <jobString>Make Techprof Subpersona Core from nanites</jobString>
+        <ingredients>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>DZ_Nanites</li>
+                    </thingDefs>
+                </filter>
+                <count>20</count>
+            </li>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>ComponentIndustrial</li>
+                    </thingDefs>
+                </filter>
+                <count>5</count>
+            </li>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>Plasteel</li>
+                    </thingDefs>
+                </filter>
+                <count>10</count>
+            </li>
+        </ingredients>
+        <fixedIngredientFilter>
+            <thingDefs>
+                <li>DZ_Nanites</li>
+                <li>ComponentIndustrial</li>
+                <li>Plasteel</li>
+            </thingDefs>
+        </fixedIngredientFilter>
+        <products>
+            <TechprofSubpersonaCore>1</TechprofSubpersonaCore>
+        </products>
+        <skillRequirements>
+            <Crafting>12</Crafting>
+            <Intellectual>12</Intellectual>
+        </skillRequirements>
+    </RecipeDef>
+
+    <!--=============== PSYCHIC ARTIFACTS NOTICE ME SENPAI ====================-->
+
+    <!--=== Psychic Shock Lance Assembly ===-->
+    <RecipeDef ParentName="Assemble_Nanites_Base">
+        <defName>assemble_psychicshocklance</defName>
+        <label>assemble psychic shock lance</label>
+        <description>Make Psychic Shock Lance from nanites</description>
+        <jobString>Make Psychic Shock Lance from nanites</jobString>
+        <ingredients>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>DZ_Nanites</li>
+                    </thingDefs>
+                </filter>
+                <count>10</count>
+            </li>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>Steel</li>
+                    </thingDefs>
+                </filter>
+                <count>20</count>
+            </li>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>Uranium</li>
+                    </thingDefs>
+                </filter>
+                <count>10</count>
+            </li>
+        </ingredients>
+        <fixedIngredientFilter>
+            <thingDefs>
+                <li>DZ_Nanites</li>
+                <li>Steel</li>
+                <li>Uranium</li>
+            </thingDefs>
+        </fixedIngredientFilter>
+        <products>
+            <PsychicShockLance>1</PsychicShockLance>
+        </products>
+        <skillRequirements>
+            <Crafting>10</Crafting>
+            <Intellectual>10</Intellectual>
+        </skillRequirements>
+    </RecipeDef>
+
+    <!--=== Psychic Sooth Pulser Assembly ===-->
+    <RecipeDef ParentName="Assemble_Nanites_Base">
+        <defName>assemble_psychicsoothepulser</defName>
+        <label>assemble psychic soothe pulser</label>
+        <description>Make Psychic Soothe Pulser from nanites</description>
+        <jobString>Make Psychic Soothe Pulser from nanites</jobString>
+        <ingredients>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>DZ_Nanites</li>
+                    </thingDefs>
+                </filter>
+                <count>10</count>
+            </li>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>Steel</li>
+                    </thingDefs>
+                </filter>
+                <count>20</count>
+            </li>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>Uranium</li>
+                    </thingDefs>
+                </filter>
+                <count>10</count>
+            </li>
+        </ingredients>
+        <fixedIngredientFilter>
+            <thingDefs>
+                <li>DZ_Nanites</li>
+                <li>Steel</li>
+                <li>Uranium</li>
+            </thingDefs>
+        </fixedIngredientFilter>
+        <products>
+            <PsychicSoothePulser>1</PsychicSoothePulser>
+        </products>
+        <skillRequirements>
+            <Crafting>10</Crafting>
+            <Intellectual>10</Intellectual>
+        </skillRequirements>
+    </RecipeDef>
+
+    <!--=== Psychic Insanity Lance Assembly ===-->
+    <RecipeDef ParentName="Assemble_Nanites_Base">
+        <defName>assemble_psychicinsanitylance</defName>
+        <label>assemble psychic insanity lance</label>
+        <description>Make Psychic Insanity Lance from nanites</description>
+        <jobString>Make Psychic Insanity Lance from nanites</jobString>
+        <ingredients>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>DZ_Nanites</li>
+                    </thingDefs>
+                </filter>
+                <count>10</count>
+            </li>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>Steel</li>
+                    </thingDefs>
+                </filter>
+                <count>20</count>
+            </li>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>Uranium</li>
+                    </thingDefs>
+                </filter>
+                <count>10</count>
+            </li>
+        </ingredients>
+        <fixedIngredientFilter>
+            <thingDefs>
+                <li>DZ_Nanites</li>
+                <li>Steel</li>
+                <li>Uranium</li>
+            </thingDefs>
+        </fixedIngredientFilter>
+        <products>
+            <PsychicInsanityLance>1</PsychicInsanityLance>
+        </products>
+        <skillRequirements>
+            <Crafting>10</Crafting>
+            <Intellectual>10</Intellectual>
+        </skillRequirements>
+    </RecipeDef>
+
+    <!--=== Psychic Animal Pulser Assembly ===-->
+    <RecipeDef ParentName="Assemble_Nanites_Base">
+        <defName>assemble_psychicanimalpulser</defName>
+        <label>assemble psychic animal pulser</label>
+        <description>Make Psychic Animal Pulser from nanites</description>
+        <jobString>Make Psychic Animal Pulser from nanites</jobString>
+        <ingredients>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>DZ_Nanites</li>
+                    </thingDefs>
+                </filter>
+                <count>10</count>
+            </li>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>Steel</li>
+                    </thingDefs>
+                </filter>
+                <count>20</count>
+            </li>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>Uranium</li>
+                    </thingDefs>
+                </filter>
+                <count>10</count>
+            </li>
+        </ingredients>
+        <fixedIngredientFilter>
+            <thingDefs>
+                <li>DZ_Nanites</li>
+                <li>Steel</li>
+                <li>Uranium</li>
+            </thingDefs>
+        </fixedIngredientFilter>
+        <products>
+            <PsychicAnimalPulser>1</PsychicAnimalPulser>
+        </products>
+        <skillRequirements>
+            <Crafting>10</Crafting>
+            <Intellectual>10</Intellectual>
+        </skillRequirements>
+    </RecipeDef>
+
+    <!--=============== OTHER OBJECTS FROM NANITES ====================-->
+
+    <!--=== Glitterworld Medicine Assembly ===-->
+    <!--<RecipeDef ParentName="Assemble_Nanites_Base">
+        <defName>assemble_medicineultratech</defName>
+        <label>Assemble Glitterworld Medicine</label>
+        <description>Make Glitterworld Medicine from nanites</description>
+        <jobString>Make Glitterworld Medicine from nanites</jobString>
+        <ingredients>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>DZ_Nanites</li>
+                    </thingDefs>
+                </filter>
+                <count>3</count>
+            </li>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>Neutroamine</li>
+                    </thingDefs>
+                </filter>
+                <count>5</count>
+            </li>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>MedicineIndustrial</li>
+                    </thingDefs>
+                </filter>
+                <count>1</count>
+            </li>
+        </ingredients>
+        <fixedIngredientFilter>
+            <thingDefs>
+                <li>DZ_Nanites</li>
+                <li>Neutroamine</li>
+                <li>MedicineIndustrial</li>
+            </thingDefs>
+        </fixedIngredientFilter>
+        <products>
+            <MedicineUltratech>1</MedicineUltratech>
+        </products>
+        <skillRequirements>
+            <Crafting>20</Crafting>
+            <Intellectual>20</Intellectual>
+        </skillRequirements>
+    </RecipeDef>-->
+
+    <!--=== Luciferium Assembly ===-->
+    <!--<RecipeDef ParentName="Assemble_Nanites_Base">
+        <defName>assemble_luciferium</defName>
+        <label>Assemble Luciferium</label>
+        <description>Make Luciferium from nanites</description>
+        <jobString>Make Luciferium from nanites</jobString>
+        <ingredients>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>DZ_Nanites</li>
+                    </thingDefs>
+                </filter>
+                <count>6</count>
+            </li>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>Neutroamine</li>
+                    </thingDefs>
+                </filter>
+                <count>6</count>
+            </li>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>Leather_Human</li>
+                    </thingDefs>
+                </filter>
+                <count>6</count>
+            </li>
+        </ingredients>
+        <fixedIngredientFilter>
+            <thingDefs>
+                <li>DZ_Nanites</li>
+                <li>Neutroamine</li>
+                <li>Leather_Human</li>
+            </thingDefs>
+        </fixedIngredientFilter>
+        <products>
+            <Luciferium>1</Luciferium>
+        </products>
+        <skillRequirements>
+            <Crafting>20</Crafting>
+            <Intellectual>20</Intellectual>
+        </skillRequirements>
+    </RecipeDef>-->
+
+</Defs>

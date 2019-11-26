@@ -1,14 +1,15 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 
 <ModMetaData>
-    <name>DocMed</name>
-    <author>Dr_Zhivago, Unon</author>
-    <url></url>
+
+    <name>DocTech</name>
+    <author>Dr_Zhivago | Unon</author>
+    <url>https://github.com/DrZhivago1/DocTech</url>
     <supportedVersions>
         <li>1.0</li>
     </supportedVersions>
     <description>
-    I made a About.xml
+    I made AN About.xml
     -Unon
     </description>
 

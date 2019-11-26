@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+   <!--Add (dis)assembly recipes to Fabrication bench-->
+   <Operation Class="PatchOperationSequence">
+      <success>Always</success>
+      <operations>
+         <li Class="PatchOperationAdd">
+            <xpath>Defs/ThingDef[defName="FabricationBench"]/recipes</xpath>
+            <value>
+               <li>assemble_aipersonacore</li>
+               <li>assemble_resmechserum</li>
+               <li>assemble_healer</li>
+               <li>assemble_techprofcore</li>
+               <li>assemble_neurotrainer</li>
+               <li>assemble_psychicshocklance</li>
+               <li>assemble_psychicsoothepulser</li>
+               <li>assemble_psychicinsanitylance</li>
+               <li>assemble_psychicanimalpulser</li>
+               <li>disassemble_aipersonacore</li>
+               <li>disassemble_resmechserum</li>
+               <li>disassemble_techprofcore</li>
+               <li>disassemble_neurotrainer</li>
+               <li>disassemble_healer</li>
+               <li>disassemble_psychicartifact</li>
+               <li>scramble_neurotrainer</li>
+            </value>
+         </li>
+
+         <!--==========LUCIFERIUM CRAFTABLE UWU OWO ^W^==========-->
+
+         <!--===Test for Luciferium costList, if it exists replace it, if it does not exist add it===-->
+         <li Class="PatchOperationConditional">
+            <xpath>Defs/ThingDef[defName="Luciferium"]/costList</xpath>
+            <match Class="PatchOperationReplace">
+               <xpath>Defs/ThingDef[defName="Luciferium"]/costList</xpath>
+               <value>
+                  <costList>
+                     <DZ_Nanites>6</DZ_Nanites>
+                     <Neutroamine>6</Neutroamine>
+                     <Leather_Human>6</Leather_Human>
+                  </costList>
+               </value>
+            </match>
+            <nomatch Class="PatchOperationAdd">
+               <xpath>Defs/ThingDef[defName="Luciferium"]</xpath>
+               <value>
+                  <costList>
+                     <DZ_Nanites>6</DZ_Nanites>
+                     <Neutroamine>6</Neutroamine>
+                     <Leather_Human>6</Leather_Human>
+                  </costList>
+               </value>
+            </nomatch>
+         </li>
+         <!--===Test for Luciferium recipeMaker, if it exists replace it, if it does not exist add it===-->
+         <li Class="PatchOperationConditional">
+            <xpath>Defs/ThingDef[defName="Luciferium"]/recipeMaker</xpath>
+            <match Class="PatchOperationReplace">
+               <xpath>Defs/ThingDef[defName="Luciferium"]/recipeMaker</xpath>
+               <value>
+                  <recipeMaker>
+                     <workSpeedStat>DrugSynthesisSpeed</workSpeedStat>
+                     <workSkill>Intellectual</workSkill>
+                     <recipeUsers>
+                        <li>DrugLab</li>
+                     </recipeUsers>
+                     <researchPrerequisite>DZ_NaniteProduction</researchPrerequisite>
+                     <skillRequirements>
+                        <Crafting>10</Crafting>
+                        <Intellectual>10</Intellectual>
+                     </skillRequirements>
+                  </recipeMaker>
+               </value>
+            </match>
+            <nomatch Class="PatchOperationAdd">
+               <xpath>Defs/ThingDef[defName="Luciferium"]</xpath>
+               <value>
+                  <recipeMaker>
+                     <workSpeedStat>DrugSynthesisSpeed</workSpeedStat>
+                     <workSkill>Intellectual</workSkill>
+                     <recipeUsers>
+                        <li>DrugLab</li>
+                     </recipeUsers>
+                     <researchPrerequisite>DZ_NaniteProduction</researchPrerequisite>
+                     <skillRequirements>
+                        <Crafting>10</Crafting>
+                        <Intellectual>10</Intellectual>
+                     </skillRequirements>
+                  </recipeMaker>
+               </value>
+            </nomatch>
+         </li>
+         <!--===Test for Luciferium WorkToMake, if it exists replace it, if it does not exist add it===-->
+         <li Class="PatchOperationConditional">
+            <xpath>Defs/ThingDef[defName="Luciferium"]/statBases/WorkToMake</xpath>
+            <match Class="PatchOperationReplace">
+               <xpath>Defs/ThingDef[defName="Luciferium"]/statBases/WorkToMake</xpath>
+               <value>
+                  <WorkToMake>1500</WorkToMake>
+               </value>
+            </match>
+            <nomatch Class="PatchOperationAdd">
+               <xpath>Defs/ThingDef[defName="Luciferium"]/statBases</xpath>
+               <value>
+                  <WorkToMake>1500</WorkToMake>
+               </value>
+            </nomatch>
+         </li>
+
+         <!--==========GLITTERWORLD MEDICINE UWU OWO ^W^==========-->
+
+         <!--===Test for Glitterworld Medicine costList, if it exists replace it, if it does not exist add it===-->
+         <li Class="PatchOperationConditional">
+            <xpath>Defs/ThingDef[defName="MedicineUltratech"]/costList</xpath>
+            <match Class="PatchOperationReplace">
+               <xpath>Defs/ThingDef[defName="MedicineUltratech"]/costList</xpath>
+               <value>
+                  <costList>
+                     <DZ_Nanites>3</DZ_Nanites>
+                     <Neutroamine>5</Neutroamine>
+                     <MedicineIndustrial>1</MedicineIndustrial>
+                  </costList>
+               </value>
+            </match>
+            <nomatch Class="PatchOperationAdd">
+               <xpath>Defs/ThingDef[defName="MedicineUltratech"]</xpath>
+               <value>
+                  <costList>
+                     <DZ_Nanites>3</DZ_Nanites>
+                     <Neutroamine>5</Neutroamine>
+                     <MedicineIndustrial>1</MedicineIndustrial>
+                  </costList>
+               </value>
+            </nomatch>
+         </li>
+         <!--===Test for Glitterworld Medicine recipeMaker, if it exists replace it, if it does not exist add it===-->
+         <li Class="PatchOperationConditional">
+            <xpath>Defs/ThingDef[defName="MedicineUltratech"]/recipeMaker</xpath>
+            <match Class="PatchOperationReplace">
+               <xpath>Defs/ThingDef[defName="MedicineUltratech"]/recipeMaker</xpath>
+               <value>
+                  <recipeMaker>
+                     <workSpeedStat>DrugSynthesisSpeed</workSpeedStat>
+                     <workSkill>Intellectual</workSkill>
+                     <recipeUsers>
+                        <li>DrugLab</li>
+                     </recipeUsers>
+                     <researchPrerequisite>DZ_NaniteProduction</researchPrerequisite>
+                     <skillRequirements>
+                        <Crafting>8</Crafting>
+                        <Intellectual>8</Intellectual>
+                     </skillRequirements>
+                  </recipeMaker>
+               </value>
+            </match>
+            <nomatch Class="PatchOperationAdd">
+               <xpath>Defs/ThingDef[defName="MedicineUltratech"]</xpath>
+               <value>
+                  <recipeMaker>
+                     <workSpeedStat>DrugSynthesisSpeed</workSpeedStat>
+                     <workSkill>Intellectual</workSkill>
+                     <recipeUsers>
+                        <li>DrugLab</li>
+                     </recipeUsers>
+                     <researchPrerequisite>DZ_NaniteProduction</researchPrerequisite>
+                     <skillRequirements>
+                        <Crafting>8</Crafting>
+                        <Intellectual>8</Intellectual>
+                     </skillRequirements>
+                  </recipeMaker>
+               </value>
+            </nomatch>
+         </li>
+         <!--===Test for Glitterworld Medicine WorkToMake, if it exists replace it, if it does not exist add it===-->
+         <li Class="PatchOperationConditional">
+            <xpath>Defs/ThingDef[defName="MedicineUltratech"]/statBases/WorkToMake</xpath>
+            <match Class="PatchOperationReplace">
+               <xpath>Defs/ThingDef[defName="MedicineUltratech"]/statBases/WorkToMake</xpath>
+               <value>
+                  <WorkToMake>1000</WorkToMake>
+               </value>
+            </match>
+            <nomatch Class="PatchOperationAdd">
+               <xpath>Defs/ThingDef[defName="MedicineUltratech"]/statBases</xpath>
+               <value>
+                  <WorkToMake>1000</WorkToMake>
+               </value>
+            </nomatch>
+         </li>
+
+         <!--==========NEUTROAMINE UWU OWO ^W^==========-->
+
+         <!--===Test for Neutroamine costList, if it exists replace it, if it does not exist add it===-->
+         <li Class="PatchOperationConditional">
+            <xpath>Defs/ThingDef[defName="Neutroamine"]/costList</xpath>
+            <match Class="PatchOperationReplace">
+               <xpath>Defs/ThingDef[defName="Neutroamine"]/costList</xpath>
+               <value>
+                  <costList>
+                     <MedicineHerbal>1</MedicineHerbal>
+                     <Steel>5</Steel>
+                     <Chemfuel>5</Chemfuel>
+                  </costList>
+               </value>
+            </match>
+            <nomatch Class="PatchOperationAdd">
+               <xpath>Defs/ThingDef[defName="Neutroamine"]</xpath>
+               <value>
+                  <costList>
+                     <MedicineHerbal>1</MedicineHerbal>
+                     <Steel>5</Steel>
+                     <Chemfuel>5</Chemfuel>
+                  </costList>
+               </value>
+            </nomatch>
+         </li>
+         <!--===Test for Neutroamine recipeMaker, if it exists replace it, if it does not exist add it===-->
+         <li Class="PatchOperationConditional">
+            <xpath>Defs/ThingDef[defName="Neutroamine"]/recipeMaker</xpath>
+            <match Class="PatchOperationReplace">
+               <xpath>Defs/ThingDef[defName="Neutroamine"]/recipeMaker</xpath>
+               <value>
+                  <recipeMaker>
+                     <workSpeedStat>DrugSynthesisSpeed</workSpeedStat>
+                     <workSkill>Intellectual</workSkill>
+                     <recipeUsers>
+                        <li>DrugLab</li>
+                     </recipeUsers>
+                     <researchPrerequisite>MedicineProduction</researchPrerequisite>
+                     <skillRequirements>
+                        <Crafting>5</Crafting>
+                        <Intellectual>5</Intellectual>
+                     </skillRequirements>
+                  </recipeMaker>
+               </value>
+            </match>
+            <nomatch Class="PatchOperationAdd">
+               <xpath>Defs/ThingDef[defName="Neutroamine"]</xpath>
+               <value>
+                  <recipeMaker>
+                     <workSpeedStat>DrugSynthesisSpeed</workSpeedStat>
+                     <workSkill>Intellectual</workSkill>
+                     <recipeUsers>
+                        <li>DrugLab</li>
+                     </recipeUsers>
+                     <researchPrerequisite>MedicineProduction</researchPrerequisite>
+                     <skillRequirements>
+                        <Crafting>5</Crafting>
+                        <Intellectual>5</Intellectual>
+                     </skillRequirements>
+                  </recipeMaker>
+               </value>
+            </nomatch>
+         </li>
+         <!--===Test Neutroamine WorkToMake, if it exists replace it, if it does not exist add it===-->
+         <li Class="PatchOperationConditional">
+            <xpath>Defs/ThingDef[defName="Neutroamine"]/statBases/WorkToMake</xpath>
+            <match Class="PatchOperationReplace">
+               <xpath>Defs/ThingDef[defName="Neutroamine"]/statBases/WorkToMake</xpath>
+               <value>
+                  <WorkToMake>500</WorkToMake>
+               </value>
+            </match>
+            <nomatch Class="PatchOperationAdd">
+               <xpath>Defs/ThingDef[defName="Neutroamine"]/statBases</xpath>
+               <value>
+                  <WorkToMake>500</WorkToMake>
+               </value>
+            </nomatch>
+         </li>
+      </operations>
+   </Operation>
+
+</Patch>

@@ -1,16 +1,24 @@
+<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-<!--=============== AI Persona Core disassembly ====================-->
-    <RecipeDef>
+    <RecipeDef Name="Disassemble_Nanites_Base" Abstract="True">
+        <workSpeedStat>SmithingSpeed</workSpeedStat>
+        <effectWorking>Smith</effectWorking>
+        <soundWorking>Recipe_Machining</soundWorking>
+        <workAmount>2000</workAmount>
+        <unfinishedThingDef>UnfinishedComponent</unfinishedThingDef>
+        <researchPrerequisite>DZ_NaniteProduction</researchPrerequisite>
+        <workSkill>Crafting</workSkill>
+    </RecipeDef>
+
+    <!--=============== RARE TECH FOR NANITES ===============-->
+
+    <!--=== AI Persona Core disassembly ===-->
+    <RecipeDef ParentName="Disassemble_Nanites_Base">
         <defName>disassemble_aipersonacore</defName>
-        <label>Disassemble AI Persona Core</label>
+        <label>Disassemble AI persona core</label>
         <description>Make nanites from a AI Persona Core</description>
         <jobString>Make nanites from a AI Persona Core</jobString>
-        <workSpeedStat>SmithingSpeed</workSpeedStat>
-        <effectWorking>Cook</effectWorking>
-        <soundWorking>Recipe_Machining</soundWorking>
-        <workAmount>1000</workAmount>
-        <unfinishedThingDef>UnfinishedComponent</unfinishedThingDef>
         <ingredients>
             <li>
                 <filter>
@@ -45,192 +53,20 @@
             </thingDefs>
         </fixedIngredientFilter>
         <products>
-            <DZ_Nanites>50</DZ_Nanites>
+            <DZ_Nanites>75</DZ_Nanites>
         </products>
-        <researchPrerequisite>AdvancedFabrication</researchPrerequisite>
         <skillRequirements>
             <Crafting>15</Crafting>
             <Intellectual>15</Intellectual>
         </skillRequirements>
-        <workSkill>Crafting</workSkill>
     </RecipeDef>
 
-<!--=============== Resurrector Mech Serum disassembly ====================-->
-    <RecipeDef>
-        <defName>disassemble_resmechserum</defName>
-        <label>Disassemble Resurrector Mech Serum</label>
-        <description>Make nanites from a Resurrector Mech Serum</description>
-        <jobString>Make nanites from a Resurrector Mech Serum</jobString>
-        <workSpeedStat>SmithingSpeed</workSpeedStat>
-        <effectWorking>Cook</effectWorking>
-        <soundWorking>Recipe_Machining</soundWorking>
-        <workAmount>1000</workAmount>
-        <unfinishedThingDef>UnfinishedComponent</unfinishedThingDef>
-        <ingredients>
-            <li>
-                <filter>
-                    <thingDefs>
-                        <li>MechSerumResurrector</li>
-                    </thingDefs>
-                </filter>
-                <count>1</count>
-            </li>
-            <li>
-                <filter>
-                    <thingDefs>
-                        <li>Plasteel</li>
-                    </thingDefs>
-                </filter>
-                <count>10</count>
-            </li>
-            <li>
-                <filter>
-                    <thingDefs>
-                        <li>Chemfuel</li>
-                    </thingDefs>
-                </filter>
-                <count>10</count>
-            </li>
-        </ingredients>
-        <fixedIngredientFilter>
-            <thingDefs>
-                <li>MechSerumResurrector</li>
-                <li>Plasteel</li>
-                <li>Chemfuel</li>
-            </thingDefs>
-        </fixedIngredientFilter>
-        <products>
-            <DZ_Nanites>40</DZ_Nanites>
-        </products>
-        <researchPrerequisite>AdvancedFabrication</researchPrerequisite>
-        <skillRequirements>
-            <Crafting>15</Crafting>
-            <Intellectual>10</Intellectual>
-        </skillRequirements>
-        <workSkill>Crafting</workSkill>
-    </RecipeDef>
-
-<!--=============== Techprof Subpersona Core disassembly ====================-->
-    <RecipeDef>
-        <defName>disassemble_techprofcore</defName>
-        <label>Disassemble Techprof Subpersona Core</label>
-        <description>Make nanites from a Techprof Subpersona Core</description>
-        <jobString>Make nanites from a Techprof Subpersona Core</jobString>
-        <workSpeedStat>SmithingSpeed</workSpeedStat>
-        <effectWorking>Cook</effectWorking>
-        <soundWorking>Recipe_Machining</soundWorking>
-        <workAmount>1000</workAmount>
-        <unfinishedThingDef>UnfinishedComponent</unfinishedThingDef>
-        <ingredients>
-            <li>
-                <filter>
-                    <thingDefs>
-                        <li>TechprofSubpersonaCore</li>
-                    </thingDefs>
-                </filter>
-                <count>1</count>
-            </li>
-            <li>
-                <filter>
-                    <thingDefs>
-                        <li>Plasteel</li>
-                    </thingDefs>
-                </filter>
-                <count>10</count>
-            </li>
-            <li>
-                <filter>
-                    <thingDefs>
-                        <li>Chemfuel</li>
-                    </thingDefs>
-                </filter>
-                <count>10</count>
-            </li>
-        </ingredients>
-        <fixedIngredientFilter>
-            <thingDefs>
-                <li>TechprofSubpersonaCore</li>
-                <li>Plasteel</li>
-                <li>Chemfuel</li>
-            </thingDefs>
-        </fixedIngredientFilter>
-        <products>
-            <DZ_Nanites>30</DZ_Nanites>
-        </products>
-        <researchPrerequisite>AdvancedFabrication</researchPrerequisite>
-        <skillRequirements>
-            <Crafting>15</Crafting>
-            <Intellectual>8</Intellectual>
-        </skillRequirements>
-        <workSkill>Crafting</workSkill>
-    </RecipeDef>
-
-<!--=============== Neutrotrainer Mech Serum disassembly ====================-->
-    <RecipeDef>
-        <defName>disassemble_neurotrainer</defName>
-        <label>Disassemble Neurotrainer Mech Serum</label>
-        <description>Make nanites from a Neutrotrainer Mech Serum</description>
-        <jobString>Make nanites from a Neutrotrainer Mech Serum</jobString>
-        <workSpeedStat>SmithingSpeed</workSpeedStat>
-        <effectWorking>Cook</effectWorking>
-        <soundWorking>Recipe_Machining</soundWorking>
-        <workAmount>1000</workAmount>
-        <unfinishedThingDef>UnfinishedComponent</unfinishedThingDef>
-        <ingredients>
-            <li>
-                <filter>
-                    <thingDefs>
-                        <li>MechSerumNeurotrainer</li>
-                    </thingDefs>
-                </filter>
-                <count>1</count>
-            </li>
-            <li>
-                <filter>
-                    <thingDefs>
-                        <li>Plasteel</li>
-                    </thingDefs>
-                </filter>
-                <count>10</count>
-            </li>
-            <li>
-                <filter>
-                    <thingDefs>
-                        <li>Chemfuel</li>
-                    </thingDefs>
-                </filter>
-                <count>10</count>
-            </li>
-        </ingredients>
-        <fixedIngredientFilter>
-            <thingDefs>
-                <li>MechSerumNeurotrainer</li>
-                <li>Plasteel</li>
-                <li>Chemfuel</li>
-            </thingDefs>
-        </fixedIngredientFilter>
-        <products>
-            <DZ_Nanites>20</DZ_Nanites>
-        </products>
-        <researchPrerequisite>AdvancedFabrication</researchPrerequisite>
-        <skillRequirements>
-            <Crafting>15</Crafting>
-            <Intellectual>8</Intellectual>
-        </skillRequirements>
-        <workSkill>Crafting</workSkill>
-    </RecipeDef>
-
-<!--=============== Healer Mech Serum disassembly ====================-->
-    <RecipeDef>
+    <!--=== Healer Mech Serum disassembly ===-->
+    <RecipeDef ParentName="Disassemble_Nanites_Base">
         <defName>disassemble_healer</defName>
-        <label>Disassemble Healer Mech Serum</label>
+        <label>disassemble healer mech serum</label>
         <description>Make nanites from a Healer Mech Serum</description>
         <jobString>Make nanites from a Healer Mech Serum</jobString>
-        <workSpeedStat>SmithingSpeed</workSpeedStat>
-        <effectWorking>Cook</effectWorking>
-        <soundWorking>Recipe_Machining</soundWorking>
-        <workAmount>1000</workAmount>
-        <unfinishedThingDef>UnfinishedComponent</unfinishedThingDef>
         <ingredients>
             <li>
                 <filter>
@@ -267,25 +103,163 @@
         <products>
             <DZ_Nanites>20</DZ_Nanites>
         </products>
-        <researchPrerequisite>AdvancedFabrication</researchPrerequisite>
         <skillRequirements>
-            <Crafting>15</Crafting>
-            <Intellectual>8</Intellectual>
+            <Crafting>11</Crafting>
+            <Intellectual>11</Intellectual>
         </skillRequirements>
-        <workSkill>Crafting</workSkill>
     </RecipeDef>
 
-<!--=============== Animal Psychic disassembly ====================-->
-    <RecipeDef>
+    <!--=== Neurotrainer Mech Serum disassembly ===-->
+    <RecipeDef ParentName="Disassemble_Nanites_Base">
+        <defName>disassemble_neurotrainer</defName>
+        <label>disassemble neurotrainer mech serum</label>
+        <description>Make nanites from a Neutrotrainer Mech Serum</description>
+        <jobString>Make nanites from a Neutrotrainer Mech Serum</jobString>
+        <ingredients>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>MechSerumNeurotrainer</li>
+                    </thingDefs>
+                </filter>
+                <count>1</count>
+            </li>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>Plasteel</li>
+                    </thingDefs>
+                </filter>
+                <count>10</count>
+            </li>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>Chemfuel</li>
+                    </thingDefs>
+                </filter>
+                <count>10</count>
+            </li>
+        </ingredients>
+        <fixedIngredientFilter>
+            <thingDefs>
+                <li>MechSerumNeurotrainer</li>
+                <li>Plasteel</li>
+                <li>Chemfuel</li>
+            </thingDefs>
+        </fixedIngredientFilter>
+        <products>
+            <DZ_Nanites>10</DZ_Nanites>
+        </products>
+        <skillRequirements>
+            <Crafting>9</Crafting>
+            <Intellectual>9</Intellectual>
+        </skillRequirements>
+    </RecipeDef>
+
+    <!--=== Resurrector Mech Serum disassembly ===-->
+    <RecipeDef ParentName="Disassemble_Nanites_Base">
+        <defName>disassemble_resmechserum</defName>
+        <label>disassemble resurrector mech serum</label>
+        <description>Make nanites from a Resurrector Mech Serum</description>
+        <jobString>Make nanites from a Resurrector Mech Serum</jobString>
+        <ingredients>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>MechSerumResurrector</li>
+                    </thingDefs>
+                </filter>
+                <count>1</count>
+            </li>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>Plasteel</li>
+                    </thingDefs>
+                </filter>
+                <count>10</count>
+            </li>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>Chemfuel</li>
+                    </thingDefs>
+                </filter>
+                <count>10</count>
+            </li>
+        </ingredients>
+        <fixedIngredientFilter>
+            <thingDefs>
+                <li>MechSerumResurrector</li>
+                <li>Plasteel</li>
+                <li>Chemfuel</li>
+            </thingDefs>
+        </fixedIngredientFilter>
+        <products>
+            <DZ_Nanites>30</DZ_Nanites>
+        </products>
+        <skillRequirements>
+            <Crafting>13</Crafting>
+            <Intellectual>13</Intellectual>
+        </skillRequirements>
+    </RecipeDef>
+
+    <!--=== Techprof Subpersona Core disassembly ===-->
+    <RecipeDef ParentName="Disassemble_Nanites_Base">
+        <defName>disassemble_techprofcore</defName>
+        <label>disassemble techprof subpersona core</label>
+        <description>Make nanites from a Techprof Subpersona Core</description>
+        <jobString>Make nanites from a Techprof Subpersona Core</jobString>
+        <ingredients>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>TechprofSubpersonaCore</li>
+                    </thingDefs>
+                </filter>
+                <count>1</count>
+            </li>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>Plasteel</li>
+                    </thingDefs>
+                </filter>
+                <count>10</count>
+            </li>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>Chemfuel</li>
+                    </thingDefs>
+                </filter>
+                <count>10</count>
+            </li>
+        </ingredients>
+        <fixedIngredientFilter>
+            <thingDefs>
+                <li>TechprofSubpersonaCore</li>
+                <li>Plasteel</li>
+                <li>Chemfuel</li>
+            </thingDefs>
+        </fixedIngredientFilter>
+        <products>
+            <DZ_Nanites>15</DZ_Nanites>
+        </products>
+        <skillRequirements>
+            <Crafting>12</Crafting>
+            <Intellectual>12</Intellectual>
+        </skillRequirements>
+    </RecipeDef>
+
+    <!--=============== PSYCHIC ARTIFACTS NOTICE ME SENPAI ===============-->
+
+    <RecipeDef ParentName="Disassemble_Nanites_Base">
         <defName>disassemble_psychicartifact</defName>
-        <label>Disassemble Psychic Artifacts</label>
+        <label>disassemble artifacts</label>
         <description>Make nanites from a Animal Artifacts</description>
         <jobString>Make nanites from a Animal Artifacts</jobString>
-        <workSpeedStat>SmithingSpeed</workSpeedStat>
-        <effectWorking>Cook</effectWorking>
-        <soundWorking>Recipe_Machining</soundWorking>
-        <workAmount>1000</workAmount>
-        <unfinishedThingDef>UnfinishedComponent</unfinishedThingDef>
         <ingredients>
             <li>
                 <filter>
@@ -320,15 +294,14 @@
             <categories>
                 <li>Artifacts</li>
             </categories>
+            <disallowedThingDefs />
         </fixedIngredientFilter>
         <products>
             <DZ_Nanites>10</DZ_Nanites>
         </products>
-        <researchPrerequisite>AdvancedFabrication</researchPrerequisite>
         <skillRequirements>
-            <Crafting>15</Crafting>
-            <Intellectual>6</Intellectual>
+            <Crafting>7</Crafting>
+            <Intellectual>7</Intellectual>
         </skillRequirements>
-        <workSkill>Crafting</workSkill>
     </RecipeDef>
 </Defs>
