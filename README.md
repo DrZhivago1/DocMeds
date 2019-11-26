@@ -3,7 +3,7 @@
 A mod which allows the disassembling and assembling of Archotech technology after the required "Nanite Production" research. This is a late-game technology and objects will produce nanites upon being disassembled. There is also a "scrambling" recipe included which allows players to randomly change neurotrainers... for a price (also note that all crafted neurotrainers are randomized). Items are as follows:
 
 | **Item** | **Assemble Skill** (CRAFTING/INTELLECTUAL)| **Disassemble Skill** (CRAFTING/INTELLECTUAL) | **Nanite Yield** | **Tech Required** | **Production Bench**  |
-| ------------- | :-------------: | :-------------: | :-------------: | :-------------: |
+| ------------- | :-------------: | :-------------: | :-------------: | :-------------: | :-------------: |
 | AI Persona Core  | 20/20  | 15/15  | 75  | Nanite Production | Fabrication Bench |
 | Healer Mech Serum  | 13/13  | 11/11 | 75  | Nanite Production  | Fabrication Bench |
 | Neurotrainer Mech Serum  | 11/11  | 9/9  | 75  | Nanite Production  | Fabrication Bench |
